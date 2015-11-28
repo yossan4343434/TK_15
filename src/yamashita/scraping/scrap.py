@@ -7,7 +7,7 @@ import lxml.html
 from bs4 import BeautifulSoup
 
 ROOT = os.path.abspath(os.path.dirname(__file__))
-IMGDIR = ROOT.replace("src/yamashita/scraping", "data/rugby/goromaru/")
+IMGDIR = ROOT.replace("src/yamashita/scraping", "data/rugby/goromaru/raw_goromaru/")
 
 def imgdownload(url):
     img = urllib2.urlopen(url)
