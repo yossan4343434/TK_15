@@ -25,6 +25,7 @@ class VSMoviePlayerViewController: UIViewController, UITableViewDelegate, UITabl
     var moviePlayer: MPMoviePlayerController!
     var audioPlayer: AVAudioPlayer!
     var statusTimer: NSTimer!
+    var movie: VSMovie!
     var sounds: [VSSound] = []
     var nextSound: VSSound!
 
@@ -33,6 +34,8 @@ class VSMoviePlayerViewController: UIViewController, UITableViewDelegate, UITabl
 
         sceneTableView.delegate = self
         sceneTableView.dataSource = self
+
+        movie = VSMovie(youtubeId: youtubeId)
 
         setupSounds()
 
@@ -51,9 +54,17 @@ class VSMoviePlayerViewController: UIViewController, UITableViewDelegate, UITabl
         statusTimer.invalidate()
         statusTimer = nil
     }
+
+    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+        return 2
+    }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 8
+        if section == 0 {
+            return movie.scene.count
+        } else {
+            return movie.person.count
+        }
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath:NSIndexPath) -> UITableViewCell {
@@ -124,12 +135,18 @@ class VSMoviePlayerViewController: UIViewController, UITableViewDelegate, UITabl
     }
 
     @IBAction func soundButtonTapped(sender: AnyObject) {
-        let params = [
-            "name": "yahoo",
-            "playtime": moviePlayer.currentPlaybackTime
-        ]
+        if !moviePlayer.currentPlaybackTime.isNaN {
+            let sound = VSSound(time: moviePlayer.currentPlaybackTime, item: "yahoo")
+            playSound(sound)
 
-        Alamofire.request(.POST, "http://27.120.86.25/visy/minisounds.json", parameters: params as! [String : AnyObject] ,encoding: .JSON)
+            let params = [
+                "name": sound.item,
+                "playtime": sound.time
+            ]
+
+            Alamofire.request(.POST, "http://27.120.86.25/visy/minisounds.json", parameters: params as! [String : AnyObject] ,encoding: .JSON)
+
+        }
     }
 
 }

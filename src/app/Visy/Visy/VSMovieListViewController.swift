@@ -10,7 +10,7 @@ import UIKit
 
 class VSMovieListViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
-    let youtubeIds: [String] = ["NIXcEWrGtsM", "hoge", "piyo"]
+    let youtubeIds: [String] = ["NIXcEWrGtsM", "eGljbxH9jXI", "XxpzKJxye1s"]
     var selectedId = String()
 
     @IBOutlet weak var movieListTableView: UITableView!
@@ -23,7 +23,6 @@ class VSMovieListViewController: UIViewController, UITableViewDelegate, UITableV
 
         movieListTableView.delegate = self
         movieListTableView.dataSource = self
-
     }
 
     override func didReceiveMemoryWarning() {
@@ -37,7 +36,9 @@ class VSMovieListViewController: UIViewController, UITableViewDelegate, UITableV
 
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell: VSMovieListCell = tableView.dequeueReusableCellWithIdentifier("movieListCell", forIndexPath: indexPath) as! VSMovieListCell
-        cell.movieTitleLabel?.text = youtubeIds[indexPath.row]
+        var movie = VSMovie(youtubeId: youtubeIds[indexPath.row])
+        cell.movieTitleLabel.text = movie.title
+        cell.movieImageView.image = movie.thumbnail
 
         return cell
     }

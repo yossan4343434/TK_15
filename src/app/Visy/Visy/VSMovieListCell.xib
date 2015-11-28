@@ -15,25 +15,25 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ce0-xk-7TT">
-                        <rect key="frame" x="12" y="12" width="386" height="180"/>
+                        <rect key="frame" x="16" y="16" width="378" height="180"/>
                         <color key="backgroundColor" red="0.45098039220000002" green="0.45098039220000002" blue="0.45098039220000002" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="180" id="ZtW-TY-zo6"/>
                         </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rzQ-OX-Psf">
-                        <rect key="frame" x="12" y="204" width="42" height="21"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <rect key="frame" x="16" y="204" width="31" height="15"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="rzQ-OX-Psf" firstAttribute="top" secondItem="ce0-xk-7TT" secondAttribute="bottom" constant="12" id="9CR-Xc-TG7"/>
-                    <constraint firstAttribute="trailing" secondItem="ce0-xk-7TT" secondAttribute="trailing" constant="12" id="FpM-LX-5gq"/>
-                    <constraint firstItem="ce0-xk-7TT" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="12" id="Gy6-UV-poy"/>
-                    <constraint firstItem="ce0-xk-7TT" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="12" id="aZJ-dO-WpA"/>
-                    <constraint firstItem="rzQ-OX-Psf" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="12" id="imi-eZ-S9X"/>
+                    <constraint firstItem="rzQ-OX-Psf" firstAttribute="top" secondItem="ce0-xk-7TT" secondAttribute="bottom" constant="8" id="9CR-Xc-TG7"/>
+                    <constraint firstAttribute="trailing" secondItem="ce0-xk-7TT" secondAttribute="trailing" constant="16" id="FpM-LX-5gq"/>
+                    <constraint firstItem="ce0-xk-7TT" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="Gy6-UV-poy"/>
+                    <constraint firstItem="ce0-xk-7TT" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="aZJ-dO-WpA"/>
+                    <constraint firstItem="rzQ-OX-Psf" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="imi-eZ-S9X"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>
