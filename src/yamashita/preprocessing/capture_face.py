@@ -24,7 +24,6 @@ def cap_face(paths):
         i += 1
         img = cv2.imread(path)
 
-        #gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
         face = cascade.detectMultiScale(img, 1.3, 5)
 
         r_name = TARDIR + "goromaru_" + str(i) 
@@ -35,7 +34,7 @@ def cap_face(paths):
                 j += 1
                 name = r_name + "_" + str(j) + ".jpg" 
                 tmp = img[y:y+h, x:x+w]
-                tmp = cv2.resize(tmp, (227, 227))
+                tmp = cv2.resize(tmp, (100, 100))
                 cv2.imwrite(name, tmp)
         else:
             nogoro = NODIR + path.split("/")[-1]
