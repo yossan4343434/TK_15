@@ -6,14 +6,14 @@ import cv2
 import glob
 
 ROOT = os.path.abspath(os.path.dirname(__file__))
-SRCDIR = ROOT.replace("src/yamashita/preprocessing", "data/rugby/goromaru/")
-TARDIR = ROOT.replace("src/yamashita/preprocessing", "data/rugby/pre_goromaru/")
-NODIR = ROOT.replace("src/yamashita/preprocessing", "data/rugby/no_goromaru/")
+SRCDIR = ROOT.replace("src/yamashita/preprocessing", "data/rugby/goromaru/raw_goromaru/")
+TARDIR = ROOT.replace("src/yamashita/preprocessing", "data/rugby/goromaru/pre_goromaru/")
+NODIR = ROOT.replace("src/yamashita/preprocessing", "data/rugby/goromaru/no_goromaru/")
 cascade = cv2.CascadeClassifier("/usr//local/Cellar/opencv/2.4.11_1/share/OpenCV/haarcascades/haarcascade_frontalface_alt.xml")
-cascade = cv2.CascadeClassifier("/usr//local/Cellar/opencv/2.4.11_1/share/OpenCV/haarcascades/haarcascade_mcs_nose.xml")
 #cascade = cv2.CascadeClassifier("/usr//local/Cellar/opencv/2.4.11_1/share/OpenCV/haarcascades/haarcascade_frontalface_alt2.xml")
 #cascade = cv2.CascadeClassifier("/usr//local/Cellar/opencv/2.4.11_1/share/OpenCV/haarcascades/haarcascade_frontalface_default.xml")
 #cascade = cv2.CascadeClassifier("/usr//local/Cellar/opencv/2.4.11_1/share/OpenCV/haarcascades/haarcascade_mcs_mouth.xml")
+#cascade = cv2.CascadeClassifier("/usr//local/Cellar/opencv/2.4.11_1/share/OpenCV/haarcascades/haarcascade_mcs_nose.xml")
 
 
 def cap_face(paths):
@@ -24,7 +24,7 @@ def cap_face(paths):
         i += 1
         img = cv2.imread(path)
 
-        face = cascade.detectMultiScale(img, 1.3, 5)
+        face = cascade.detectMultiScale(img, 1.3, 3)
 
         r_name = TARDIR + "goromaru_" + str(i) 
         
@@ -40,8 +40,6 @@ def cap_face(paths):
             nogoro = NODIR + path.split("/")[-1]
             shutil.copy(path, nogoro)
 
-        if i >= 10:
-            quit()
 
 def getlist():
 
