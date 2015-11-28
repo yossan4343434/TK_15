@@ -60,22 +60,6 @@ data.sort(key=lambda x:x[0])
 for i in data:
   print "https://www.youtube.com/watch?v=%s#t=%i" % (video_id, i[0]*time_frame-10)
 
-
-# rms.sort(key=lambda x:x[0])
-# for i in rms:
-#   if i[2] > 0.99:
-#     print "https://www.youtube.com/watch?v=%s#t=%i" % (video_id, i[0]-10)
-    # second = i[0] * time_frame
-    # minute = math.floor(second / 60.0)
-    # sec = math.floor((second / 60.0 - minute) * 60)
-    # print str(int(minute)) + "m" + str(int(sec)) + "s"
-
-
-# data = []
-# for i in rms:
-#   data.append(i[2])
-# plt.plot(data)
-# plt.show()
 os.remove("output.m4a")
 os.remove("output.wav")
 
