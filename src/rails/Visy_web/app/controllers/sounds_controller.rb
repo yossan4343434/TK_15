@@ -36,7 +36,7 @@ class SoundsController < ApplicationController
   def create
     sound = Sound.find_or_create_by(name: params[:name])
     sound.video_id = params[:video_id]
-    sound.playtime = params[:playtime]
+    sound.playtime = params[:playtime].to_f
     sound.sound = params[:sound]
     sound.save!
     render json: {

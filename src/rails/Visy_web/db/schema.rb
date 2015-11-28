@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151128043640) do
+ActiveRecord::Schema.define(version: 20151128095058) do
 
   create_table "minisounds", force: :cascade do |t|
     t.string   "movie_id",   limit: 255
@@ -24,7 +24,7 @@ ActiveRecord::Schema.define(version: 20151128043640) do
   create_table "sounds", force: :cascade do |t|
     t.string   "name",       limit: 255
     t.string   "video_id",   limit: 255
-    t.string   "playtime",   limit: 255
+    t.float    "playtime",   limit: 24
     t.string   "sound",      limit: 255
     t.datetime "created_at",             null: false
     t.datetime "updated_at",             null: false
