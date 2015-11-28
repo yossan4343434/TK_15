@@ -17,5 +17,4 @@ class VSSound {
         self.time = time
         self.item = item
     }
-
 }
