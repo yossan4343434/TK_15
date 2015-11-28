@@ -1,6 +1,7 @@
 #coding: UTF8
 
 import cv2
+import glob
 import shutil
 import numpy as np
 import math
@@ -18,9 +19,10 @@ rotation
 mono
 """
 
-mode = "mono"
-r_src = "/Users/Yamashita/Desktop/github_space/TK_15/data/rugby/original/preprocessed_goromaru/"
-r_dst = "/Users/Yamashita/Desktop/github_space/TK_15/data/rugby/datasets/aug1/"
+mode = "slide_multi5"
+#r_src = "/Users/Yamashita/Desktop/github_space/TK_15/data/rugby/original/preprocessed_goromaru/"
+r_src = "/Users/Yamashita/Desktop/github_space/TK_15/data/rugby/datasets/aug1/"
+r_dst = "/Users/Yamashita/Desktop/github_space/TK_15/data/rugby/datasets/aug2/"
 
 
 def multi_3(img, pix=3):
@@ -155,7 +157,9 @@ if __name__ == '__main__':
     filelist = glob.glob(r_src+"*")
     
     for photo in filelist:
-
+        
+        jpg = photo.split("/")[-1]
+        jpg = jpg.replace(jpg.split(".")[-1], "jpg")
         n1_photo = r_dst + jpg
 
         img = cv2.imread(photo)
