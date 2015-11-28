@@ -124,12 +124,18 @@ class VSMoviePlayerViewController: UIViewController, UITableViewDelegate, UITabl
     }
 
     @IBAction func soundButtonTapped(sender: AnyObject) {
-        let params = [
-            "name": "yahoo",
-            "playtime": moviePlayer.currentPlaybackTime
-        ]
+        if !moviePlayer.currentPlaybackTime.isNaN {
+            let sound = VSSound(time: moviePlayer.currentPlaybackTime, item: "yahoo")
+            playSound(sound)
 
-        Alamofire.request(.POST, "http://27.120.86.25/visy/minisounds.json", parameters: params as! [String : AnyObject] ,encoding: .JSON)
+            let params = [
+                "name": sound.item,
+                "playtime": sound.time
+            ]
+
+            Alamofire.request(.POST, "http://27.120.86.25/visy/minisounds.json", parameters: params as! [String : AnyObject] ,encoding: .JSON)
+
+        }
     }
 
 }
