@@ -1,0 +1,507 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EDC743981C0950DE003FFBE4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC743971C0950DE003FFBE4 /* AppDelegate.swift */; };
+		EDC7439A1C0950DE003FFBE4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC743991C0950DE003FFBE4 /* ViewController.swift */; };
+		EDC7439D1C0950DE003FFBE4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDC7439B1C0950DE003FFBE4 /* Main.storyboard */; };
+		EDC7439F1C0950DE003FFBE4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDC7439E1C0950DE003FFBE4 /* Assets.xcassets */; };
+		EDC743A21C0950DE003FFBE4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDC743A01C0950DE003FFBE4 /* LaunchScreen.storyboard */; };
+		EDC743AD1C0950DE003FFBE4 /* VisyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC743AC1C0950DE003FFBE4 /* VisyTests.swift */; };
+		EDC743B81C0950DE003FFBE4 /* VisyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC743B71C0950DE003FFBE4 /* VisyUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EDC743A91C0950DE003FFBE4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EDC7438C1C0950DE003FFBE4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EDC743931C0950DE003FFBE4;
+			remoteInfo = Visy;
+		};
+		EDC743B41C0950DE003FFBE4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EDC7438C1C0950DE003FFBE4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EDC743931C0950DE003FFBE4;
+			remoteInfo = Visy;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EDC743941C0950DE003FFBE4 /* Visy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Visy.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EDC743971C0950DE003FFBE4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EDC743991C0950DE003FFBE4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EDC7439C1C0950DE003FFBE4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EDC7439E1C0950DE003FFBE4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EDC743A11C0950DE003FFBE4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EDC743A31C0950DE003FFBE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EDC743A81C0950DE003FFBE4 /* VisyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VisyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EDC743AC1C0950DE003FFBE4 /* VisyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisyTests.swift; sourceTree = "<group>"; };
+		EDC743AE1C0950DE003FFBE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EDC743B31C0950DE003FFBE4 /* VisyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VisyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EDC743B71C0950DE003FFBE4 /* VisyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisyUITests.swift; sourceTree = "<group>"; };
+		EDC743B91C0950DE003FFBE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EDC743911C0950DE003FFBE4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDC743A51C0950DE003FFBE4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDC743B01C0950DE003FFBE4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EDC7438B1C0950DE003FFBE4 = {
+			isa = PBXGroup;
+			children = (
+				EDC743961C0950DE003FFBE4 /* Visy */,
+				EDC743AB1C0950DE003FFBE4 /* VisyTests */,
+				EDC743B61C0950DE003FFBE4 /* VisyUITests */,
+				EDC743951C0950DE003FFBE4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EDC743951C0950DE003FFBE4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EDC743941C0950DE003FFBE4 /* Visy.app */,
+				EDC743A81C0950DE003FFBE4 /* VisyTests.xctest */,
+				EDC743B31C0950DE003FFBE4 /* VisyUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EDC743961C0950DE003FFBE4 /* Visy */ = {
+			isa = PBXGroup;
+			children = (
+				EDC743971C0950DE003FFBE4 /* AppDelegate.swift */,
+				EDC743991C0950DE003FFBE4 /* ViewController.swift */,
+				EDC7439B1C0950DE003FFBE4 /* Main.storyboard */,
+				EDC7439E1C0950DE003FFBE4 /* Assets.xcassets */,
+				EDC743A01C0950DE003FFBE4 /* LaunchScreen.storyboard */,
+				EDC743A31C0950DE003FFBE4 /* Info.plist */,
+			);
+			path = Visy;
+			sourceTree = "<group>";
+		};
+		EDC743AB1C0950DE003FFBE4 /* VisyTests */ = {
+			isa = PBXGroup;
+			children = (
+				EDC743AC1C0950DE003FFBE4 /* VisyTests.swift */,
+				EDC743AE1C0950DE003FFBE4 /* Info.plist */,
+			);
+			path = VisyTests;
+			sourceTree = "<group>";
+		};
+		EDC743B61C0950DE003FFBE4 /* VisyUITests */ = {
+			isa = PBXGroup;
+			children = (
+				EDC743B71C0950DE003FFBE4 /* VisyUITests.swift */,
+				EDC743B91C0950DE003FFBE4 /* Info.plist */,
+			);
+			path = VisyUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EDC743931C0950DE003FFBE4 /* Visy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EDC743BC1C0950DE003FFBE4 /* Build configuration list for PBXNativeTarget "Visy" */;
+			buildPhases = (
+				EDC743901C0950DE003FFBE4 /* Sources */,
+				EDC743911C0950DE003FFBE4 /* Frameworks */,
+				EDC743921C0950DE003FFBE4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Visy;
+			productName = Visy;
+			productReference = EDC743941C0950DE003FFBE4 /* Visy.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EDC743A71C0950DE003FFBE4 /* VisyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EDC743BF1C0950DE003FFBE4 /* Build configuration list for PBXNativeTarget "VisyTests" */;
+			buildPhases = (
+				EDC743A41C0950DE003FFBE4 /* Sources */,
+				EDC743A51C0950DE003FFBE4 /* Frameworks */,
+				EDC743A61C0950DE003FFBE4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EDC743AA1C0950DE003FFBE4 /* PBXTargetDependency */,
+			);
+			name = VisyTests;
+			productName = VisyTests;
+			productReference = EDC743A81C0950DE003FFBE4 /* VisyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EDC743B21C0950DE003FFBE4 /* VisyUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EDC743C21C0950DE003FFBE4 /* Build configuration list for PBXNativeTarget "VisyUITests" */;
+			buildPhases = (
+				EDC743AF1C0950DE003FFBE4 /* Sources */,
+				EDC743B01C0950DE003FFBE4 /* Frameworks */,
+				EDC743B11C0950DE003FFBE4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EDC743B51C0950DE003FFBE4 /* PBXTargetDependency */,
+			);
+			name = VisyUITests;
+			productName = VisyUITests;
+			productReference = EDC743B31C0950DE003FFBE4 /* VisyUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EDC7438C1C0950DE003FFBE4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0710;
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = TK_15;
+				TargetAttributes = {
+					EDC743931C0950DE003FFBE4 = {
+						CreatedOnToolsVersion = 7.1.1;
+					};
+					EDC743A71C0950DE003FFBE4 = {
+						CreatedOnToolsVersion = 7.1.1;
+						TestTargetID = EDC743931C0950DE003FFBE4;
+					};
+					EDC743B21C0950DE003FFBE4 = {
+						CreatedOnToolsVersion = 7.1.1;
+						TestTargetID = EDC743931C0950DE003FFBE4;
+					};
+				};
+			};
+			buildConfigurationList = EDC7438F1C0950DE003FFBE4 /* Build configuration list for PBXProject "Visy" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EDC7438B1C0950DE003FFBE4;
+			productRefGroup = EDC743951C0950DE003FFBE4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EDC743931C0950DE003FFBE4 /* Visy */,
+				EDC743A71C0950DE003FFBE4 /* VisyTests */,
+				EDC743B21C0950DE003FFBE4 /* VisyUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EDC743921C0950DE003FFBE4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDC743A21C0950DE003FFBE4 /* LaunchScreen.storyboard in Resources */,
+				EDC7439F1C0950DE003FFBE4 /* Assets.xcassets in Resources */,
+				EDC7439D1C0950DE003FFBE4 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDC743A61C0950DE003FFBE4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDC743B11C0950DE003FFBE4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EDC743901C0950DE003FFBE4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDC7439A1C0950DE003FFBE4 /* ViewController.swift in Sources */,
+				EDC743981C0950DE003FFBE4 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDC743A41C0950DE003FFBE4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDC743AD1C0950DE003FFBE4 /* VisyTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDC743AF1C0950DE003FFBE4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDC743B81C0950DE003FFBE4 /* VisyUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EDC743AA1C0950DE003FFBE4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EDC743931C0950DE003FFBE4 /* Visy */;
+			targetProxy = EDC743A91C0950DE003FFBE4 /* PBXContainerItemProxy */;
+		};
+		EDC743B51C0950DE003FFBE4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EDC743931C0950DE003FFBE4 /* Visy */;
+			targetProxy = EDC743B41C0950DE003FFBE4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EDC7439B1C0950DE003FFBE4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EDC7439C1C0950DE003FFBE4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EDC743A01C0950DE003FFBE4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EDC743A11C0950DE003FFBE4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EDC743BA1C0950DE003FFBE4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EDC743BB1C0950DE003FFBE4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EDC743BD1C0950DE003FFBE4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Visy/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Visy;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		EDC743BE1C0950DE003FFBE4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Visy/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Visy;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		EDC743C01C0950DE003FFBE4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = VisyTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.VisyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Visy.app/Visy";
+			};
+			name = Debug;
+		};
+		EDC743C11C0950DE003FFBE4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = VisyTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.VisyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Visy.app/Visy";
+			};
+			name = Release;
+		};
+		EDC743C31C0950DE003FFBE4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = VisyUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.VisyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Visy;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		EDC743C41C0950DE003FFBE4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = VisyUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.VisyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Visy;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EDC7438F1C0950DE003FFBE4 /* Build configuration list for PBXProject "Visy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EDC743BA1C0950DE003FFBE4 /* Debug */,
+				EDC743BB1C0950DE003FFBE4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EDC743BC1C0950DE003FFBE4 /* Build configuration list for PBXNativeTarget "Visy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EDC743BD1C0950DE003FFBE4 /* Debug */,
+				EDC743BE1C0950DE003FFBE4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		EDC743BF1C0950DE003FFBE4 /* Build configuration list for PBXNativeTarget "VisyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EDC743C01C0950DE003FFBE4 /* Debug */,
+				EDC743C11C0950DE003FFBE4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		EDC743C21C0950DE003FFBE4 /* Build configuration list for PBXNativeTarget "VisyUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EDC743C31C0950DE003FFBE4 /* Debug */,
+				EDC743C41C0950DE003FFBE4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EDC7438C1C0950DE003FFBE4 /* Project object */;
+}
