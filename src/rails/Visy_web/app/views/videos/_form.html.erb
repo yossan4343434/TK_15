@@ -1,6 +1,6 @@
 <%= simple_form_for @video, :html => { :class => 'form-horizontal' } do |f| %>
-  <%= f.input :video_hash %>
-  <%= error_span(@video[:video_hash]) %>
+  <%= f.input :youtube_id %>
+  <%= error_span(@video[:youtube_id]) %>
   <%= f.input :name %>
   <%= error_span(@video[:name]) %>
 

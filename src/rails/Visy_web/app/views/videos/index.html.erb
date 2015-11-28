@@ -6,7 +6,7 @@
   <thead>
     <tr>
       <th><%= model_class.human_attribute_name(:id) %></th>
-      <th><%= model_class.human_attribute_name(:video_hash) %></th>
+      <th><%= model_class.human_attribute_name(:youtube_id) %></th>
       <th><%= model_class.human_attribute_name(:name) %></th>
       <th><%= model_class.human_attribute_name(:created_at) %></th>
       <th><%=t '.actions', :default => t("helpers.actions") %></th>
@@ -16,7 +16,7 @@
     <% @videos.each do |video| %>
       <tr>
         <td><%= link_to video.id, video_path(video) %></td>
-        <td><%= video.video_hash %></td>
+        <td><%= video.youtube_id %></td>
         <td><%= video.name %></td>
         <td><%=l video.created_at %></td>
         <td>
