@@ -20,6 +20,8 @@
 		EDDB2D751C0986300069DDBD /* VSSound.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDDB2D741C0986300069DDBD /* VSSound.swift */; };
 		EDDB2D791C09A6460069DDBD /* Resource in Resources */ = {isa = PBXBuildFile; fileRef = EDDB2D781C09A6460069DDBD /* Resource */; };
 		EDDB2D7B1C09AEFD0069DDBD /* VSMovie.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDDB2D7A1C09AEFD0069DDBD /* VSMovie.swift */; };
+		EDDB2D7E1C09DCF20069DDBD /* VSSceneListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDDB2D7C1C09DCF20069DDBD /* VSSceneListCell.swift */; };
+		EDDB2D7F1C09DCF20069DDBD /* VSSceneListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EDDB2D7D1C09DCF20069DDBD /* VSSceneListCell.xib */; };
 		EDF14DA77B1F1F1CDA8AC9AE /* Pods_Visy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B29FC8D26F9CDBD0AE29736C /* Pods_Visy.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
@@ -63,6 +65,8 @@
 		EDDB2D741C0986300069DDBD /* VSSound.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VSSound.swift; sourceTree = "<group>"; };
 		EDDB2D781C09A6460069DDBD /* Resource */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Resource; sourceTree = "<group>"; };
 		EDDB2D7A1C09AEFD0069DDBD /* VSMovie.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VSMovie.swift; sourceTree = "<group>"; };
+		EDDB2D7C1C09DCF20069DDBD /* VSSceneListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VSSceneListCell.swift; sourceTree = "<group>"; };
+		EDDB2D7D1C09DCF20069DDBD /* VSSceneListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VSSceneListCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,9 +142,11 @@
 				EDDB2D7A1C09AEFD0069DDBD /* VSMovie.swift */,
 				EDDB2D741C0986300069DDBD /* VSSound.swift */,
 				EDDB2D6C1C0970580069DDBD /* VSMovieListViewController.swift */,
+				EDDB2D721C0979DC0069DDBD /* VSMoviePlayerViewController.swift */,
 				EDDB2D6E1C09712E0069DDBD /* VSMovieListCell.swift */,
 				EDDB2D6F1C09712E0069DDBD /* VSMovieListCell.xib */,
-				EDDB2D721C0979DC0069DDBD /* VSMoviePlayerViewController.swift */,
+				EDDB2D7C1C09DCF20069DDBD /* VSSceneListCell.swift */,
+				EDDB2D7D1C09DCF20069DDBD /* VSSceneListCell.xib */,
 				EDDB2D451C0970330069DDBD /* Assets.xcassets */,
 				EDDB2D471C0970330069DDBD /* LaunchScreen.storyboard */,
 				EDDB2D4A1C0970330069DDBD /* Info.plist */,
@@ -277,6 +283,7 @@
 				EDDB2D491C0970330069DDBD /* LaunchScreen.storyboard in Resources */,
 				EDDB2D791C09A6460069DDBD /* Resource in Resources */,
 				EDDB2D711C09712E0069DDBD /* VSMovieListCell.xib in Resources */,
+				EDDB2D7F1C09DCF20069DDBD /* VSSceneListCell.xib in Resources */,
 				EDDB2D461C0970330069DDBD /* Assets.xcassets in Resources */,
 				EDDB2D441C0970320069DDBD /* Main.storyboard in Resources */,
 			);
@@ -352,6 +359,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EDDB2D701C09712E0069DDBD /* VSMovieListCell.swift in Sources */,
+				EDDB2D7E1C09DCF20069DDBD /* VSSceneListCell.swift in Sources */,
 				EDDB2D751C0986300069DDBD /* VSSound.swift in Sources */,
 				EDDB2D3F1C0970320069DDBD /* AppDelegate.swift in Sources */,
 				EDDB2D6D1C0970580069DDBD /* VSMovieListViewController.swift in Sources */,

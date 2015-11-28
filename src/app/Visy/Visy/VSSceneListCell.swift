@@ -1,5 +1,5 @@
 //
-//  VSMovieListCell.swift
+//  VSSceneListCell.swift
 //  Visy
 //
 //  Created by Yoshiyuki Kuga on 2015/11/28.
@@ -8,10 +8,10 @@
 
 import UIKit
 
-class VSMovieListCell: UITableViewCell {
+class VSSceneListCell: UITableViewCell {
 
-    @IBOutlet weak var movieImageView: UIImageView!
-    @IBOutlet weak var movieTitleLabel: UILabel!
+    @IBOutlet weak var sceneImageView: UIImageView!
+    @IBOutlet weak var sceneLabel: UILabel!
 
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -22,7 +22,7 @@ class VSMovieListCell: UITableViewCell {
     }
 
     class func cellHeight() -> CGFloat {
-        return 240
+        return 80
     }
     
 }
