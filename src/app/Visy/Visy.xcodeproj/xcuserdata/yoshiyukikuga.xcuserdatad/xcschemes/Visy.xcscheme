@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "EDC743931C0950DE003FFBE4"
+               BlueprintIdentifier = "EDDB2D3A1C0970320069DDBD"
                BuildableName = "Visy.app"
                BlueprintName = "Visy"
                ReferencedContainer = "container:Visy.xcodeproj">
@@ -32,7 +32,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "EDC743A71C0950DE003FFBE4"
+               BlueprintIdentifier = "EDDB2D4E1C0970330069DDBD"
                BuildableName = "VisyTests.xctest"
                BlueprintName = "VisyTests"
                ReferencedContainer = "container:Visy.xcodeproj">
@@ -42,7 +42,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "EDC743B21C0950DE003FFBE4"
+               BlueprintIdentifier = "EDDB2D591C0970330069DDBD"
                BuildableName = "VisyUITests.xctest"
                BlueprintName = "VisyUITests"
                ReferencedContainer = "container:Visy.xcodeproj">
@@ -52,7 +52,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "EDC743931C0950DE003FFBE4"
+            BlueprintIdentifier = "EDDB2D3A1C0970320069DDBD"
             BuildableName = "Visy.app"
             BlueprintName = "Visy"
             ReferencedContainer = "container:Visy.xcodeproj">
@@ -75,7 +75,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "EDC743931C0950DE003FFBE4"
+            BlueprintIdentifier = "EDDB2D3A1C0970320069DDBD"
             BuildableName = "Visy.app"
             BlueprintName = "Visy"
             ReferencedContainer = "container:Visy.xcodeproj">
@@ -94,7 +94,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "EDC743931C0950DE003FFBE4"
+            BlueprintIdentifier = "EDDB2D3A1C0970320069DDBD"
             BuildableName = "Visy.app"
             BlueprintName = "Visy"
             ReferencedContainer = "container:Visy.xcodeproj">

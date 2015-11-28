@@ -7,64 +7,70 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		EDC743981C0950DE003FFBE4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC743971C0950DE003FFBE4 /* AppDelegate.swift */; };
-		EDC7439A1C0950DE003FFBE4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC743991C0950DE003FFBE4 /* ViewController.swift */; };
-		EDC7439D1C0950DE003FFBE4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDC7439B1C0950DE003FFBE4 /* Main.storyboard */; };
-		EDC7439F1C0950DE003FFBE4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDC7439E1C0950DE003FFBE4 /* Assets.xcassets */; };
-		EDC743A21C0950DE003FFBE4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDC743A01C0950DE003FFBE4 /* LaunchScreen.storyboard */; };
-		EDC743AD1C0950DE003FFBE4 /* VisyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC743AC1C0950DE003FFBE4 /* VisyTests.swift */; };
-		EDC743B81C0950DE003FFBE4 /* VisyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC743B71C0950DE003FFBE4 /* VisyUITests.swift */; };
+		EDDB2D3F1C0970320069DDBD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDDB2D3E1C0970320069DDBD /* AppDelegate.swift */; };
+		EDDB2D441C0970320069DDBD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDDB2D421C0970320069DDBD /* Main.storyboard */; };
+		EDDB2D461C0970330069DDBD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDDB2D451C0970330069DDBD /* Assets.xcassets */; };
+		EDDB2D491C0970330069DDBD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDDB2D471C0970330069DDBD /* LaunchScreen.storyboard */; };
+		EDDB2D541C0970330069DDBD /* VisyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDDB2D531C0970330069DDBD /* VisyTests.swift */; };
+		EDDB2D5F1C0970330069DDBD /* VisyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDDB2D5E1C0970330069DDBD /* VisyUITests.swift */; };
+		EDDB2D6D1C0970580069DDBD /* VSMovieListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDDB2D6C1C0970580069DDBD /* VSMovieListViewController.swift */; };
+		EDDB2D701C09712E0069DDBD /* VSMovieListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDDB2D6E1C09712E0069DDBD /* VSMovieListCell.swift */; };
+		EDDB2D711C09712E0069DDBD /* VSMovieListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EDDB2D6F1C09712E0069DDBD /* VSMovieListCell.xib */; };
+		EDDB2D731C0979DC0069DDBD /* VSMoviePlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDDB2D721C0979DC0069DDBD /* VSMoviePlayerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		EDC743A91C0950DE003FFBE4 /* PBXContainerItemProxy */ = {
+		EDDB2D501C0970330069DDBD /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = EDC7438C1C0950DE003FFBE4 /* Project object */;
+			containerPortal = EDDB2D331C0970320069DDBD /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = EDC743931C0950DE003FFBE4;
+			remoteGlobalIDString = EDDB2D3A1C0970320069DDBD;
 			remoteInfo = Visy;
 		};
-		EDC743B41C0950DE003FFBE4 /* PBXContainerItemProxy */ = {
+		EDDB2D5B1C0970330069DDBD /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = EDC7438C1C0950DE003FFBE4 /* Project object */;
+			containerPortal = EDDB2D331C0970320069DDBD /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = EDC743931C0950DE003FFBE4;
+			remoteGlobalIDString = EDDB2D3A1C0970320069DDBD;
 			remoteInfo = Visy;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		EDC743941C0950DE003FFBE4 /* Visy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Visy.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		EDC743971C0950DE003FFBE4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		EDC743991C0950DE003FFBE4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		EDC7439C1C0950DE003FFBE4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		EDC7439E1C0950DE003FFBE4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		EDC743A11C0950DE003FFBE4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		EDC743A31C0950DE003FFBE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EDC743A81C0950DE003FFBE4 /* VisyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VisyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		EDC743AC1C0950DE003FFBE4 /* VisyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisyTests.swift; sourceTree = "<group>"; };
-		EDC743AE1C0950DE003FFBE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EDC743B31C0950DE003FFBE4 /* VisyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VisyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		EDC743B71C0950DE003FFBE4 /* VisyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisyUITests.swift; sourceTree = "<group>"; };
-		EDC743B91C0950DE003FFBE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EDDB2D3B1C0970320069DDBD /* Visy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Visy.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EDDB2D3E1C0970320069DDBD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EDDB2D431C0970320069DDBD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EDDB2D451C0970330069DDBD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EDDB2D481C0970330069DDBD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EDDB2D4A1C0970330069DDBD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EDDB2D4F1C0970330069DDBD /* VisyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VisyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EDDB2D531C0970330069DDBD /* VisyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisyTests.swift; sourceTree = "<group>"; };
+		EDDB2D551C0970330069DDBD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EDDB2D5A1C0970330069DDBD /* VisyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VisyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EDDB2D5E1C0970330069DDBD /* VisyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisyUITests.swift; sourceTree = "<group>"; };
+		EDDB2D601C0970330069DDBD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EDDB2D6C1C0970580069DDBD /* VSMovieListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VSMovieListViewController.swift; sourceTree = "<group>"; };
+		EDDB2D6E1C09712E0069DDBD /* VSMovieListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VSMovieListCell.swift; sourceTree = "<group>"; };
+		EDDB2D6F1C09712E0069DDBD /* VSMovieListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VSMovieListCell.xib; sourceTree = "<group>"; };
+		EDDB2D721C0979DC0069DDBD /* VSMoviePlayerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VSMoviePlayerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		EDC743911C0950DE003FFBE4 /* Frameworks */ = {
+		EDDB2D381C0970320069DDBD /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EDC743A51C0950DE003FFBE4 /* Frameworks */ = {
+		EDDB2D4C1C0970330069DDBD /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EDC743B01C0950DE003FFBE4 /* Frameworks */ = {
+		EDDB2D571C0970330069DDBD /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -74,53 +80,56 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		EDC7438B1C0950DE003FFBE4 = {
+		EDDB2D321C0970320069DDBD = {
 			isa = PBXGroup;
 			children = (
-				EDC743961C0950DE003FFBE4 /* Visy */,
-				EDC743AB1C0950DE003FFBE4 /* VisyTests */,
-				EDC743B61C0950DE003FFBE4 /* VisyUITests */,
-				EDC743951C0950DE003FFBE4 /* Products */,
+				EDDB2D3D1C0970320069DDBD /* Visy */,
+				EDDB2D521C0970330069DDBD /* VisyTests */,
+				EDDB2D5D1C0970330069DDBD /* VisyUITests */,
+				EDDB2D3C1C0970320069DDBD /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		EDC743951C0950DE003FFBE4 /* Products */ = {
+		EDDB2D3C1C0970320069DDBD /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				EDC743941C0950DE003FFBE4 /* Visy.app */,
-				EDC743A81C0950DE003FFBE4 /* VisyTests.xctest */,
-				EDC743B31C0950DE003FFBE4 /* VisyUITests.xctest */,
+				EDDB2D3B1C0970320069DDBD /* Visy.app */,
+				EDDB2D4F1C0970330069DDBD /* VisyTests.xctest */,
+				EDDB2D5A1C0970330069DDBD /* VisyUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		EDC743961C0950DE003FFBE4 /* Visy */ = {
+		EDDB2D3D1C0970320069DDBD /* Visy */ = {
 			isa = PBXGroup;
 			children = (
-				EDC743971C0950DE003FFBE4 /* AppDelegate.swift */,
-				EDC743991C0950DE003FFBE4 /* ViewController.swift */,
-				EDC7439B1C0950DE003FFBE4 /* Main.storyboard */,
-				EDC7439E1C0950DE003FFBE4 /* Assets.xcassets */,
-				EDC743A01C0950DE003FFBE4 /* LaunchScreen.storyboard */,
-				EDC743A31C0950DE003FFBE4 /* Info.plist */,
+				EDDB2D3E1C0970320069DDBD /* AppDelegate.swift */,
+				EDDB2D421C0970320069DDBD /* Main.storyboard */,
+				EDDB2D6C1C0970580069DDBD /* VSMovieListViewController.swift */,
+				EDDB2D6E1C09712E0069DDBD /* VSMovieListCell.swift */,
+				EDDB2D6F1C09712E0069DDBD /* VSMovieListCell.xib */,
+				EDDB2D721C0979DC0069DDBD /* VSMoviePlayerViewController.swift */,
+				EDDB2D451C0970330069DDBD /* Assets.xcassets */,
+				EDDB2D471C0970330069DDBD /* LaunchScreen.storyboard */,
+				EDDB2D4A1C0970330069DDBD /* Info.plist */,
 			);
 			path = Visy;
 			sourceTree = "<group>";
 		};
-		EDC743AB1C0950DE003FFBE4 /* VisyTests */ = {
+		EDDB2D521C0970330069DDBD /* VisyTests */ = {
 			isa = PBXGroup;
 			children = (
-				EDC743AC1C0950DE003FFBE4 /* VisyTests.swift */,
-				EDC743AE1C0950DE003FFBE4 /* Info.plist */,
+				EDDB2D531C0970330069DDBD /* VisyTests.swift */,
+				EDDB2D551C0970330069DDBD /* Info.plist */,
 			);
 			path = VisyTests;
 			sourceTree = "<group>";
 		};
-		EDC743B61C0950DE003FFBE4 /* VisyUITests */ = {
+		EDDB2D5D1C0970330069DDBD /* VisyUITests */ = {
 			isa = PBXGroup;
 			children = (
-				EDC743B71C0950DE003FFBE4 /* VisyUITests.swift */,
-				EDC743B91C0950DE003FFBE4 /* Info.plist */,
+				EDDB2D5E1C0970330069DDBD /* VisyUITests.swift */,
+				EDDB2D601C0970330069DDBD /* Info.plist */,
 			);
 			path = VisyUITests;
 			sourceTree = "<group>";
@@ -128,13 +137,13 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		EDC743931C0950DE003FFBE4 /* Visy */ = {
+		EDDB2D3A1C0970320069DDBD /* Visy */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = EDC743BC1C0950DE003FFBE4 /* Build configuration list for PBXNativeTarget "Visy" */;
+			buildConfigurationList = EDDB2D631C0970330069DDBD /* Build configuration list for PBXNativeTarget "Visy" */;
 			buildPhases = (
-				EDC743901C0950DE003FFBE4 /* Sources */,
-				EDC743911C0950DE003FFBE4 /* Frameworks */,
-				EDC743921C0950DE003FFBE4 /* Resources */,
+				EDDB2D371C0970320069DDBD /* Sources */,
+				EDDB2D381C0970320069DDBD /* Frameworks */,
+				EDDB2D391C0970320069DDBD /* Resources */,
 			);
 			buildRules = (
 			);
@@ -142,69 +151,69 @@
 			);
 			name = Visy;
 			productName = Visy;
-			productReference = EDC743941C0950DE003FFBE4 /* Visy.app */;
+			productReference = EDDB2D3B1C0970320069DDBD /* Visy.app */;
 			productType = "com.apple.product-type.application";
 		};
-		EDC743A71C0950DE003FFBE4 /* VisyTests */ = {
+		EDDB2D4E1C0970330069DDBD /* VisyTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = EDC743BF1C0950DE003FFBE4 /* Build configuration list for PBXNativeTarget "VisyTests" */;
+			buildConfigurationList = EDDB2D661C0970330069DDBD /* Build configuration list for PBXNativeTarget "VisyTests" */;
 			buildPhases = (
-				EDC743A41C0950DE003FFBE4 /* Sources */,
-				EDC743A51C0950DE003FFBE4 /* Frameworks */,
-				EDC743A61C0950DE003FFBE4 /* Resources */,
+				EDDB2D4B1C0970330069DDBD /* Sources */,
+				EDDB2D4C1C0970330069DDBD /* Frameworks */,
+				EDDB2D4D1C0970330069DDBD /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				EDC743AA1C0950DE003FFBE4 /* PBXTargetDependency */,
+				EDDB2D511C0970330069DDBD /* PBXTargetDependency */,
 			);
 			name = VisyTests;
 			productName = VisyTests;
-			productReference = EDC743A81C0950DE003FFBE4 /* VisyTests.xctest */;
+			productReference = EDDB2D4F1C0970330069DDBD /* VisyTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		EDC743B21C0950DE003FFBE4 /* VisyUITests */ = {
+		EDDB2D591C0970330069DDBD /* VisyUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = EDC743C21C0950DE003FFBE4 /* Build configuration list for PBXNativeTarget "VisyUITests" */;
+			buildConfigurationList = EDDB2D691C0970330069DDBD /* Build configuration list for PBXNativeTarget "VisyUITests" */;
 			buildPhases = (
-				EDC743AF1C0950DE003FFBE4 /* Sources */,
-				EDC743B01C0950DE003FFBE4 /* Frameworks */,
-				EDC743B11C0950DE003FFBE4 /* Resources */,
+				EDDB2D561C0970330069DDBD /* Sources */,
+				EDDB2D571C0970330069DDBD /* Frameworks */,
+				EDDB2D581C0970330069DDBD /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				EDC743B51C0950DE003FFBE4 /* PBXTargetDependency */,
+				EDDB2D5C1C0970330069DDBD /* PBXTargetDependency */,
 			);
 			name = VisyUITests;
 			productName = VisyUITests;
-			productReference = EDC743B31C0950DE003FFBE4 /* VisyUITests.xctest */;
+			productReference = EDDB2D5A1C0970330069DDBD /* VisyUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		EDC7438C1C0950DE003FFBE4 /* Project object */ = {
+		EDDB2D331C0970320069DDBD /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0710;
 				LastUpgradeCheck = 0710;
 				ORGANIZATIONNAME = TK_15;
 				TargetAttributes = {
-					EDC743931C0950DE003FFBE4 = {
+					EDDB2D3A1C0970320069DDBD = {
 						CreatedOnToolsVersion = 7.1.1;
 					};
-					EDC743A71C0950DE003FFBE4 = {
+					EDDB2D4E1C0970330069DDBD = {
 						CreatedOnToolsVersion = 7.1.1;
-						TestTargetID = EDC743931C0950DE003FFBE4;
+						TestTargetID = EDDB2D3A1C0970320069DDBD;
 					};
-					EDC743B21C0950DE003FFBE4 = {
+					EDDB2D591C0970330069DDBD = {
 						CreatedOnToolsVersion = 7.1.1;
-						TestTargetID = EDC743931C0950DE003FFBE4;
+						TestTargetID = EDDB2D3A1C0970320069DDBD;
 					};
 				};
 			};
-			buildConfigurationList = EDC7438F1C0950DE003FFBE4 /* Build configuration list for PBXProject "Visy" */;
+			buildConfigurationList = EDDB2D361C0970320069DDBD /* Build configuration list for PBXProject "Visy" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -212,37 +221,38 @@
 				en,
 				Base,
 			);
-			mainGroup = EDC7438B1C0950DE003FFBE4;
-			productRefGroup = EDC743951C0950DE003FFBE4 /* Products */;
+			mainGroup = EDDB2D321C0970320069DDBD;
+			productRefGroup = EDDB2D3C1C0970320069DDBD /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				EDC743931C0950DE003FFBE4 /* Visy */,
-				EDC743A71C0950DE003FFBE4 /* VisyTests */,
-				EDC743B21C0950DE003FFBE4 /* VisyUITests */,
+				EDDB2D3A1C0970320069DDBD /* Visy */,
+				EDDB2D4E1C0970330069DDBD /* VisyTests */,
+				EDDB2D591C0970330069DDBD /* VisyUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		EDC743921C0950DE003FFBE4 /* Resources */ = {
+		EDDB2D391C0970320069DDBD /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EDC743A21C0950DE003FFBE4 /* LaunchScreen.storyboard in Resources */,
-				EDC7439F1C0950DE003FFBE4 /* Assets.xcassets in Resources */,
-				EDC7439D1C0950DE003FFBE4 /* Main.storyboard in Resources */,
+				EDDB2D491C0970330069DDBD /* LaunchScreen.storyboard in Resources */,
+				EDDB2D711C09712E0069DDBD /* VSMovieListCell.xib in Resources */,
+				EDDB2D461C0970330069DDBD /* Assets.xcassets in Resources */,
+				EDDB2D441C0970320069DDBD /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EDC743A61C0950DE003FFBE4 /* Resources */ = {
+		EDDB2D4D1C0970330069DDBD /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EDC743B11C0950DE003FFBE4 /* Resources */ = {
+		EDDB2D581C0970330069DDBD /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -252,59 +262,61 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		EDC743901C0950DE003FFBE4 /* Sources */ = {
+		EDDB2D371C0970320069DDBD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EDC7439A1C0950DE003FFBE4 /* ViewController.swift in Sources */,
-				EDC743981C0950DE003FFBE4 /* AppDelegate.swift in Sources */,
+				EDDB2D701C09712E0069DDBD /* VSMovieListCell.swift in Sources */,
+				EDDB2D3F1C0970320069DDBD /* AppDelegate.swift in Sources */,
+				EDDB2D6D1C0970580069DDBD /* VSMovieListViewController.swift in Sources */,
+				EDDB2D731C0979DC0069DDBD /* VSMoviePlayerViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EDC743A41C0950DE003FFBE4 /* Sources */ = {
+		EDDB2D4B1C0970330069DDBD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EDC743AD1C0950DE003FFBE4 /* VisyTests.swift in Sources */,
+				EDDB2D541C0970330069DDBD /* VisyTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EDC743AF1C0950DE003FFBE4 /* Sources */ = {
+		EDDB2D561C0970330069DDBD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EDC743B81C0950DE003FFBE4 /* VisyUITests.swift in Sources */,
+				EDDB2D5F1C0970330069DDBD /* VisyUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		EDC743AA1C0950DE003FFBE4 /* PBXTargetDependency */ = {
+		EDDB2D511C0970330069DDBD /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = EDC743931C0950DE003FFBE4 /* Visy */;
-			targetProxy = EDC743A91C0950DE003FFBE4 /* PBXContainerItemProxy */;
+			target = EDDB2D3A1C0970320069DDBD /* Visy */;
+			targetProxy = EDDB2D501C0970330069DDBD /* PBXContainerItemProxy */;
 		};
-		EDC743B51C0950DE003FFBE4 /* PBXTargetDependency */ = {
+		EDDB2D5C1C0970330069DDBD /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = EDC743931C0950DE003FFBE4 /* Visy */;
-			targetProxy = EDC743B41C0950DE003FFBE4 /* PBXContainerItemProxy */;
+			target = EDDB2D3A1C0970320069DDBD /* Visy */;
+			targetProxy = EDDB2D5B1C0970330069DDBD /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		EDC7439B1C0950DE003FFBE4 /* Main.storyboard */ = {
+		EDDB2D421C0970320069DDBD /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				EDC7439C1C0950DE003FFBE4 /* Base */,
+				EDDB2D431C0970320069DDBD /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		EDC743A01C0950DE003FFBE4 /* LaunchScreen.storyboard */ = {
+		EDDB2D471C0970330069DDBD /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				EDC743A11C0950DE003FFBE4 /* Base */,
+				EDDB2D481C0970330069DDBD /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -312,7 +324,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		EDC743BA1C0950DE003FFBE4 /* Debug */ = {
+		EDDB2D611C0970330069DDBD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -357,7 +369,7 @@
 			};
 			name = Debug;
 		};
-		EDC743BB1C0950DE003FFBE4 /* Release */ = {
+		EDDB2D621C0970330069DDBD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -395,7 +407,7 @@
 			};
 			name = Release;
 		};
-		EDC743BD1C0950DE003FFBE4 /* Debug */ = {
+		EDDB2D641C0970330069DDBD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -406,7 +418,7 @@
 			};
 			name = Debug;
 		};
-		EDC743BE1C0950DE003FFBE4 /* Release */ = {
+		EDDB2D651C0970330069DDBD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -417,7 +429,7 @@
 			};
 			name = Release;
 		};
-		EDC743C01C0950DE003FFBE4 /* Debug */ = {
+		EDDB2D671C0970330069DDBD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -429,7 +441,7 @@
 			};
 			name = Debug;
 		};
-		EDC743C11C0950DE003FFBE4 /* Release */ = {
+		EDDB2D681C0970330069DDBD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -441,7 +453,7 @@
 			};
 			name = Release;
 		};
-		EDC743C31C0950DE003FFBE4 /* Debug */ = {
+		EDDB2D6A1C0970330069DDBD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				INFOPLIST_FILE = VisyUITests/Info.plist;
@@ -453,7 +465,7 @@
 			};
 			name = Debug;
 		};
-		EDC743C41C0950DE003FFBE4 /* Release */ = {
+		EDDB2D6B1C0970330069DDBD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				INFOPLIST_FILE = VisyUITests/Info.plist;
@@ -468,40 +480,40 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		EDC7438F1C0950DE003FFBE4 /* Build configuration list for PBXProject "Visy" */ = {
+		EDDB2D361C0970320069DDBD /* Build configuration list for PBXProject "Visy" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				EDC743BA1C0950DE003FFBE4 /* Debug */,
-				EDC743BB1C0950DE003FFBE4 /* Release */,
+				EDDB2D611C0970330069DDBD /* Debug */,
+				EDDB2D621C0970330069DDBD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		EDC743BC1C0950DE003FFBE4 /* Build configuration list for PBXNativeTarget "Visy" */ = {
+		EDDB2D631C0970330069DDBD /* Build configuration list for PBXNativeTarget "Visy" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				EDC743BD1C0950DE003FFBE4 /* Debug */,
-				EDC743BE1C0950DE003FFBE4 /* Release */,
+				EDDB2D641C0970330069DDBD /* Debug */,
+				EDDB2D651C0970330069DDBD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
-		EDC743BF1C0950DE003FFBE4 /* Build configuration list for PBXNativeTarget "VisyTests" */ = {
+		EDDB2D661C0970330069DDBD /* Build configuration list for PBXNativeTarget "VisyTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				EDC743C01C0950DE003FFBE4 /* Debug */,
-				EDC743C11C0950DE003FFBE4 /* Release */,
+				EDDB2D671C0970330069DDBD /* Debug */,
+				EDDB2D681C0970330069DDBD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
-		EDC743C21C0950DE003FFBE4 /* Build configuration list for PBXNativeTarget "VisyUITests" */ = {
+		EDDB2D691C0970330069DDBD /* Build configuration list for PBXNativeTarget "VisyUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				EDC743C31C0950DE003FFBE4 /* Debug */,
-				EDC743C41C0950DE003FFBE4 /* Release */,
+				EDDB2D6A1C0970330069DDBD /* Debug */,
+				EDDB2D6B1C0970330069DDBD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = EDC7438C1C0950DE003FFBE4 /* Project object */;
+	rootObject = EDDB2D331C0970320069DDBD /* Project object */;
 }
