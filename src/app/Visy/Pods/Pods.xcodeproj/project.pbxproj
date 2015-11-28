@@ -1,0 +1,1170 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		029F6C7459DDCFB45B98E6A5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5102922F99336B31CE2D6BCA /* Foundation.framework */; };
+		030DEC4D1437A5675F130EE4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5102922F99336B31CE2D6BCA /* Foundation.framework */; };
+		0B7BE3CE11405B350C1195EB /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08034274E527AA7B90B743DC /* Error.swift */; };
+		1550F3B023A593CCBA7D700B /* AsyncButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51DF28D222506E242C0E1B59 /* AsyncButton.swift */; };
+		2202FEB8124B3EFA6AB42693 /* AsyncImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2606B580915D97E4D0AFAB2F /* AsyncImageView.swift */; };
+		25DDF7E39FDF3AFA158F56F6 /* SoundPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B2280773CAEF5DA51629231 /* SoundPlayer.swift */; };
+		294C56962C4A892928B7CDFA /* Misc.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8B48E5FFE50B231C338F55E /* Misc.swift */; };
+		30B9D22F2EBB0C325BA9E5E1 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C1EAE3300AF92769AB0078E /* Response.swift */; };
+		329F4A921F0CFC384184CA15 /* SpringAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D5797386D7BB714769ED24C /* SpringAnimation.swift */; };
+		3662888D7DA64E13776343E7 /* SpringView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C9458ACE283612330804919 /* SpringView.swift */; };
+		397692D642DBCE6407B502D1 /* Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2CA53D06C992D527236813 /* Manager.swift */; };
+		3C9CD3FDCB34015DCF16C93C /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B6E24886E615D32B4C7440 /* LoadingView.swift */; };
+		3E79F8D39D89219A1FD9071B /* MultipartFormData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5051FF7303D40DECE5AC232C /* MultipartFormData.swift */; };
+		407FC7D1095D2F88010DB8EC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5102922F99336B31CE2D6BCA /* Foundation.framework */; };
+		415B026ABEBDE9AD91725C2D /* Pods-Visy-SwiftyJSON-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 61A974D89392C8F7A6B956A1 /* Pods-Visy-SwiftyJSON-dummy.m */; };
+		4CCEA1655FCE4F0E240721A7 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E7EAD8559AAC9E20D96045 /* SwiftyJSON.swift */; };
+		510990A955D9A99E24790A75 /* Pods-Visy-Alamofire-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 89F903E6B8592354B498B345 /* Pods-Visy-Alamofire-dummy.m */; };
+		51227078C231287718383EAE /* DesignableImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521CA953932E0D5B0E80C338 /* DesignableImageView.swift */; };
+		531053AF74D70CE67E28F247 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5102922F99336B31CE2D6BCA /* Foundation.framework */; };
+		53EE7F3B82C3A944EFC001E7 /* LoadingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F0BC2732CD0FFA9619E5DBBD /* LoadingView.xib */; };
+		542939B0813157BE7741D53C /* SpringImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD14BE912EB23687F01006B8 /* SpringImageView.swift */; };
+		55CD815E43DC54AF55132E18 /* HCYoutubeParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B5EE6742088E4E4CEF4BC4A /* HCYoutubeParser.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		57A03B258173FD5595A64269 /* AutoTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 304767169FD7FB5CD36D33A1 /* AutoTextView.swift */; };
+		57EFF52E92DFC351AD3F71D4 /* Pods-Visy-HCYoutubeParser-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C0EB7AEA8F4AB895AE9DCD30 /* Pods-Visy-HCYoutubeParser-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5811BCECFB76B87F5DCB3EFC /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BC4DDDD011ABC5B22FE9F71 /* Alamofire.swift */; };
+		59D0096D619CF61B251C7653 /* DesignableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C3F1CECA8D6A7764142877D /* DesignableView.swift */; };
+		624304CE3A80A1EAB51F42DB /* Pods-Visy-Spring-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B0A572873782B48D29C5F14A /* Pods-Visy-Spring-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		67D8A1DB06B30815DD2A9513 /* DesignableButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D35391CD4BE830DD103BAE51 /* DesignableButton.swift */; };
+		6D1A7659E4A26C53D1A1A5F0 /* Upload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BFC4A09B7DEF7FB8F4FB982 /* Upload.swift */; };
+		726D8F82E416FB0819F6258E /* DesignableTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF37439A514C06519C6B4A7 /* DesignableTextView.swift */; };
+		732ABB22F1EFE9C010093238 /* SpringTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6646E44351CE6858CA1F9D4 /* SpringTextField.swift */; };
+		79FA12C20EAFB763D4E59248 /* DesignableLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2B77C293CF51D50CDB5E280 /* DesignableLabel.swift */; };
+		7A07B99785E6D48C1EAFE85E /* TransitionZoom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9177021433491A8C1A699962 /* TransitionZoom.swift */; };
+		7BB8EF4C416825EB2276392F /* DesignableTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E3EF3281103548BA569681E /* DesignableTabBarController.swift */; };
+		7F0419CA336F3CF69E020342 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5102922F99336B31CE2D6BCA /* Foundation.framework */; };
+		83327BCF7E1A9068CCC17D43 /* SpringButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89FC3B5168207B69A4796818 /* SpringButton.swift */; };
+		85BB2463D79EA137ADAE8140 /* DesignableTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799232574691E7F94F3E20D9 /* DesignableTextField.swift */; };
+		9141441BEC5A3413DCDC94ED /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027128EB27C89FB6E1D160EB /* ImageLoader.swift */; };
+		936D9A6959EE5269E4934BED /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36E9590CEC7675D5B78E6BC4 /* Request.swift */; };
+		AE9B512699828AEB2849C417 /* TransitionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B24E16D3D58F682C122C30 /* TransitionManager.swift */; };
+		B30BE6519F3772478550C25A /* HCYoutubeParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C36EDABB98CD82A7298DD23 /* HCYoutubeParser.m */; };
+		B42CC6F6C6AFE460873A3D09 /* Download.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A33349BA7EC308D809AAC3F /* Download.swift */; };
+		B44D61943F4792F8E8FBBD09 /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C8D161ACC3F722F64BEC7B /* ParameterEncoding.swift */; };
+		B784A82232B6CF07229F2014 /* Pods-Visy-SwiftyJSON-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5303F59905EBE1693B25DDD5 /* Pods-Visy-SwiftyJSON-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C0731D86ADFBBCB48A59E6D9 /* UnwindSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = D535E4D42DA086A4B81DCFAE /* UnwindSegue.swift */; };
+		C7E1DB85004524EF2FF4F6FF /* KeyboardLayoutConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E9B0343541BC54DEFE53DB /* KeyboardLayoutConstraint.swift */; };
+		C831AF9E4A4E046E0F7F9D8E /* SpringLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD4C0DF0B5A55863E86477A /* SpringLabel.swift */; };
+		CA53286F5471C282439D2807 /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DB75FE20DCB78A30870B9F2 /* Validation.swift */; };
+		CC64F323EACFE74821796919 /* Pods-Visy-HCYoutubeParser-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DDF1DF82A2B0878A9B5D8360 /* Pods-Visy-HCYoutubeParser-dummy.m */; };
+		CD967F0A2290F9A37192018C /* Spring.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42545A3695A580876C5C3AD5 /* Spring.swift */; };
+		CDED5A94F942A503FEE13374 /* BlurView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D4B191719CE2A87DB578FC6 /* BlurView.swift */; };
+		D5B941E5E66521B86CD26D0F /* Stream.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6764F1C757242E09D566F75C /* Stream.swift */; };
+		D63EDFAEC1D3A377AA198E8D /* ResponseSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0A7B7902D93FA630A500154 /* ResponseSerialization.swift */; };
+		DADE7BE4337F9246BEFBBC5E /* SpringTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EAFD0825AF4711EF26F388A /* SpringTextView.swift */; };
+		DC681A918926B6D6D5BD8261 /* Pods-Visy-Spring-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F976C7E5CDAA399C302B290 /* Pods-Visy-Spring-dummy.m */; };
+		E06DA82DB8F994A6921674C2 /* Pods-Visy-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C0A697C9229F2D261DF8E5C5 /* Pods-Visy-dummy.m */; };
+		E0A646A64A8606AD33EAEE04 /* ServerTrustPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD7F11108E0D63526E9123F /* ServerTrustPolicy.swift */; };
+		E3A5D0C6263CB453001145EF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FA7F910A35E90C16A914172 /* Images.xcassets */; };
+		E6E177381BD12334CCC5C7C7 /* Pods-Visy-Alamofire-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E4ABC8CC4B43AF714D1470EA /* Pods-Visy-Alamofire-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E7BC2AB75C31BBC4C4D02DCF /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DEF0ED7D88BD5674334A125 /* Result.swift */; };
+		F64839298464D541D230F0E4 /* Pods-Visy-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D02E17612C1D25CF6AA73A18 /* Pods-Visy-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0E59AF419A172DF890649F19 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5638FF16531AA84A6E216901 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0D0C3DAC6C1EE45EC3EE104D;
+			remoteInfo = "Pods-Visy-Alamofire";
+		};
+		42276555E871E85540433488 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5638FF16531AA84A6E216901 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 045EC427C1A17F5665F800A6;
+			remoteInfo = "Pods-Visy-HCYoutubeParser";
+		};
+		6EAFDFCEE3E3117BE48562BF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5638FF16531AA84A6E216901 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9370614FABF9DD68361029E2;
+			remoteInfo = "Pods-Visy-Spring";
+		};
+		AE1874955E8E0A56EAAB05ED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5638FF16531AA84A6E216901 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4017F50856381B3D0B3D5FF6;
+			remoteInfo = "Pods-Visy-SwiftyJSON";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		027128EB27C89FB6E1D160EB /* ImageLoader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageLoader.swift; path = Spring/ImageLoader.swift; sourceTree = "<group>"; };
+		055EFC57BCE507A61F189930 /* Pods-Visy-Alamofire.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Visy-Alamofire.modulemap"; sourceTree = "<group>"; };
+		08034274E527AA7B90B743DC /* Error.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Error.swift; path = Source/Error.swift; sourceTree = "<group>"; };
+		0C3F1CECA8D6A7764142877D /* DesignableView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DesignableView.swift; path = Spring/DesignableView.swift; sourceTree = "<group>"; };
+		0D5797386D7BB714769ED24C /* SpringAnimation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SpringAnimation.swift; path = Spring/SpringAnimation.swift; sourceTree = "<group>"; };
+		0DB75FE20DCB78A30870B9F2 /* Validation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Validation.swift; path = Source/Validation.swift; sourceTree = "<group>"; };
+		0DD7F11108E0D63526E9123F /* ServerTrustPolicy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ServerTrustPolicy.swift; path = Source/ServerTrustPolicy.swift; sourceTree = "<group>"; };
+		18E9B0343541BC54DEFE53DB /* KeyboardLayoutConstraint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KeyboardLayoutConstraint.swift; path = Spring/KeyboardLayoutConstraint.swift; sourceTree = "<group>"; };
+		1B46B76C7261894BAB7C619B /* Pods-Visy-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Visy-acknowledgements.plist"; sourceTree = "<group>"; };
+		1B5EE6742088E4E4CEF4BC4A /* HCYoutubeParser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HCYoutubeParser.h; path = YoutubeParser/Classes/HCYoutubeParser.h; sourceTree = "<group>"; };
+		1BC4DDDD011ABC5B22FE9F71 /* Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Alamofire.swift; path = Source/Alamofire.swift; sourceTree = "<group>"; };
+		1C1EAE3300AF92769AB0078E /* Response.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Response.swift; path = Source/Response.swift; sourceTree = "<group>"; };
+		1C391577BF94281D569DC651 /* Pods-Visy-Alamofire.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Visy-Alamofire.xcconfig"; sourceTree = "<group>"; };
+		1EAFD0825AF4711EF26F388A /* SpringTextView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SpringTextView.swift; path = Spring/SpringTextView.swift; sourceTree = "<group>"; };
+		20E7EAD8559AAC9E20D96045 /* SwiftyJSON.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftyJSON.swift; path = Source/SwiftyJSON.swift; sourceTree = "<group>"; };
+		25B8939B25377291DF27E4E8 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2606B580915D97E4D0AFAB2F /* AsyncImageView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AsyncImageView.swift; path = Spring/AsyncImageView.swift; sourceTree = "<group>"; };
+		304767169FD7FB5CD36D33A1 /* AutoTextView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AutoTextView.swift; path = Spring/AutoTextView.swift; sourceTree = "<group>"; };
+		320F3C0BBEC9A6389C1C6823 /* Pods-Visy-Spring-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Visy-Spring-prefix.pch"; sourceTree = "<group>"; };
+		32CFAE52031EB693D1402E13 /* Pods-Visy-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Visy-environment.h"; sourceTree = "<group>"; };
+		36E9590CEC7675D5B78E6BC4 /* Request.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Request.swift; path = Source/Request.swift; sourceTree = "<group>"; };
+		3B2280773CAEF5DA51629231 /* SoundPlayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SoundPlayer.swift; path = Spring/SoundPlayer.swift; sourceTree = "<group>"; };
+		3C36EDABB98CD82A7298DD23 /* HCYoutubeParser.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HCYoutubeParser.m; path = YoutubeParser/Classes/HCYoutubeParser.m; sourceTree = "<group>"; };
+		3DEF0ED7D88BD5674334A125 /* Result.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Result.swift; path = Source/Result.swift; sourceTree = "<group>"; };
+		3FA7F910A35E90C16A914172 /* Images.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = SpringApp/Images.xcassets; sourceTree = "<group>"; };
+		41BC5556E4636E408B2A9BD6 /* Pods-Visy.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Visy.modulemap"; sourceTree = "<group>"; };
+		42545A3695A580876C5C3AD5 /* Spring.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Spring.swift; path = Spring/Spring.swift; sourceTree = "<group>"; };
+		42C050541F96EE52A98A8FA0 /* Pods-Visy-Spring.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Visy-Spring.modulemap"; sourceTree = "<group>"; };
+		48B24E16D3D58F682C122C30 /* TransitionManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TransitionManager.swift; path = Spring/TransitionManager.swift; sourceTree = "<group>"; };
+		49E9CF1CAC573A6336EABFFC /* Pods-Visy-HCYoutubeParser-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Visy-HCYoutubeParser-Private.xcconfig"; sourceTree = "<group>"; };
+		4A33349BA7EC308D809AAC3F /* Download.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Download.swift; path = Source/Download.swift; sourceTree = "<group>"; };
+		4F976C7E5CDAA399C302B290 /* Pods-Visy-Spring-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Visy-Spring-dummy.m"; sourceTree = "<group>"; };
+		5051FF7303D40DECE5AC232C /* MultipartFormData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultipartFormData.swift; path = Source/MultipartFormData.swift; sourceTree = "<group>"; };
+		5102922F99336B31CE2D6BCA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		518658D028C9C9DC6B4C0B17 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		51DF28D222506E242C0E1B59 /* AsyncButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AsyncButton.swift; path = Spring/AsyncButton.swift; sourceTree = "<group>"; };
+		521CA953932E0D5B0E80C338 /* DesignableImageView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DesignableImageView.swift; path = Spring/DesignableImageView.swift; sourceTree = "<group>"; };
+		52C8D161ACC3F722F64BEC7B /* ParameterEncoding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParameterEncoding.swift; path = Source/ParameterEncoding.swift; sourceTree = "<group>"; };
+		5303F59905EBE1693B25DDD5 /* Pods-Visy-SwiftyJSON-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Visy-SwiftyJSON-umbrella.h"; sourceTree = "<group>"; };
+		58FEDA24BE9BD0F0A2C6C061 /* Pods-Visy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Visy.debug.xcconfig"; sourceTree = "<group>"; };
+		5EDA286A76FADC882766DF89 /* Pods-Visy-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Visy-frameworks.sh"; sourceTree = "<group>"; };
+		61A974D89392C8F7A6B956A1 /* Pods-Visy-SwiftyJSON-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Visy-SwiftyJSON-dummy.m"; sourceTree = "<group>"; };
+		6764F1C757242E09D566F75C /* Stream.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Stream.swift; path = Source/Stream.swift; sourceTree = "<group>"; };
+		6BCF43254EEDBFC38F9FC3A3 /* Pods-Visy-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Visy-acknowledgements.markdown"; sourceTree = "<group>"; };
+		72040EAE7AA5521AEA76915B /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		746D53EE2E6FFE9765087778 /* Pods-Visy-Spring-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Visy-Spring-Private.xcconfig"; sourceTree = "<group>"; };
+		799232574691E7F94F3E20D9 /* DesignableTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DesignableTextField.swift; path = Spring/DesignableTextField.swift; sourceTree = "<group>"; };
+		7C9458ACE283612330804919 /* SpringView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SpringView.swift; path = Spring/SpringView.swift; sourceTree = "<group>"; };
+		811E92BA21E4B39C271DD8F1 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		85291725A257245B1333806C /* Pods-Visy-SwiftyJSON-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Visy-SwiftyJSON-prefix.pch"; sourceTree = "<group>"; };
+		87AA57282E2E02384D1D7D6A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		89F903E6B8592354B498B345 /* Pods-Visy-Alamofire-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Visy-Alamofire-dummy.m"; sourceTree = "<group>"; };
+		89FC3B5168207B69A4796818 /* SpringButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SpringButton.swift; path = Spring/SpringButton.swift; sourceTree = "<group>"; };
+		8D4B191719CE2A87DB578FC6 /* BlurView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BlurView.swift; path = Spring/BlurView.swift; sourceTree = "<group>"; };
+		90F7E14DED63F3644269CAEE /* Pods_Visy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Visy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		90FAD2B4C72EFCEC93AFC55D /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9177021433491A8C1A699962 /* TransitionZoom.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TransitionZoom.swift; path = Spring/TransitionZoom.swift; sourceTree = "<group>"; };
+		9BFC4A09B7DEF7FB8F4FB982 /* Upload.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Upload.swift; path = Source/Upload.swift; sourceTree = "<group>"; };
+		9E3EF3281103548BA569681E /* DesignableTabBarController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DesignableTabBarController.swift; path = Spring/DesignableTabBarController.swift; sourceTree = "<group>"; };
+		A2B77C293CF51D50CDB5E280 /* DesignableLabel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DesignableLabel.swift; path = Spring/DesignableLabel.swift; sourceTree = "<group>"; };
+		A6646E44351CE6858CA1F9D4 /* SpringTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SpringTextField.swift; path = Spring/SpringTextField.swift; sourceTree = "<group>"; };
+		A8D7F600AB8AB51E2D4ADD45 /* Pods-Visy-SwiftyJSON.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Visy-SwiftyJSON.modulemap"; sourceTree = "<group>"; };
+		AB32DFC8EFD296D95051E86C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AD14BE912EB23687F01006B8 /* SpringImageView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SpringImageView.swift; path = Spring/SpringImageView.swift; sourceTree = "<group>"; };
+		B0A572873782B48D29C5F14A /* Pods-Visy-Spring-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Visy-Spring-umbrella.h"; sourceTree = "<group>"; };
+		B6600DEABBE19A47661C7E4C /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C0A697C9229F2D261DF8E5C5 /* Pods-Visy-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Visy-dummy.m"; sourceTree = "<group>"; };
+		C0D9C5C0F422B4BA6E1B1B1B /* Pods-Visy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Visy.release.xcconfig"; sourceTree = "<group>"; };
+		C0EB7AEA8F4AB895AE9DCD30 /* Pods-Visy-HCYoutubeParser-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Visy-HCYoutubeParser-umbrella.h"; sourceTree = "<group>"; };
+		C3EEAE47BDA747BBF5537CB6 /* Pods-Visy-Alamofire-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Visy-Alamofire-Private.xcconfig"; sourceTree = "<group>"; };
+		C7B6E24886E615D32B4C7440 /* LoadingView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LoadingView.swift; path = Spring/LoadingView.swift; sourceTree = "<group>"; };
+		D02E17612C1D25CF6AA73A18 /* Pods-Visy-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Visy-umbrella.h"; sourceTree = "<group>"; };
+		D35391CD4BE830DD103BAE51 /* DesignableButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DesignableButton.swift; path = Spring/DesignableButton.swift; sourceTree = "<group>"; };
+		D535E4D42DA086A4B81DCFAE /* UnwindSegue.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UnwindSegue.swift; path = Spring/UnwindSegue.swift; sourceTree = "<group>"; };
+		DCD4C0DF0B5A55863E86477A /* SpringLabel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SpringLabel.swift; path = Spring/SpringLabel.swift; sourceTree = "<group>"; };
+		DD2CA53D06C992D527236813 /* Manager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Manager.swift; path = Source/Manager.swift; sourceTree = "<group>"; };
+		DDF1DF82A2B0878A9B5D8360 /* Pods-Visy-HCYoutubeParser-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Visy-HCYoutubeParser-dummy.m"; sourceTree = "<group>"; };
+		DEC4138B01D3E1F2F4C2B243 /* Pods-Visy-SwiftyJSON-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Visy-SwiftyJSON-Private.xcconfig"; sourceTree = "<group>"; };
+		DF9AB10C378AC4FADCF40798 /* Pods-Visy-HCYoutubeParser.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Visy-HCYoutubeParser.xcconfig"; sourceTree = "<group>"; };
+		E0A7B7902D93FA630A500154 /* ResponseSerialization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResponseSerialization.swift; path = Source/ResponseSerialization.swift; sourceTree = "<group>"; };
+		E115850EF373A99996E31A4F /* HCYoutubeParser.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HCYoutubeParser.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E4ABC8CC4B43AF714D1470EA /* Pods-Visy-Alamofire-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Visy-Alamofire-umbrella.h"; sourceTree = "<group>"; };
+		E8B48E5FFE50B231C338F55E /* Misc.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Misc.swift; path = Spring/Misc.swift; sourceTree = "<group>"; };
+		E994EA60421D26F5E7652B74 /* Pods-Visy-HCYoutubeParser-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Visy-HCYoutubeParser-prefix.pch"; sourceTree = "<group>"; };
+		EA9207D4B192EAAB6CED067B /* Pods-Visy-Alamofire-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Visy-Alamofire-prefix.pch"; sourceTree = "<group>"; };
+		F0BC2732CD0FFA9619E5DBBD /* LoadingView.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = LoadingView.xib; path = Spring/LoadingView.xib; sourceTree = "<group>"; };
+		F254A69651E29438136BB45D /* Spring.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Spring.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5BCE2DCC76070728895F87E /* Pods-Visy-SwiftyJSON.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Visy-SwiftyJSON.xcconfig"; sourceTree = "<group>"; };
+		FA18E7DA41AF3A81D92E682B /* Pods-Visy-Spring.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Visy-Spring.xcconfig"; sourceTree = "<group>"; };
+		FD3C88336804D70475B4FFA7 /* Pods-Visy-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Visy-resources.sh"; sourceTree = "<group>"; };
+		FDE2599A4BFC6C0DAFD74BFF /* Pods-Visy-HCYoutubeParser.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Visy-HCYoutubeParser.modulemap"; sourceTree = "<group>"; };
+		FDF37439A514C06519C6B4A7 /* DesignableTextView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DesignableTextView.swift; path = Spring/DesignableTextView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		179F35F06CD8CE15C33D3CC9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				407FC7D1095D2F88010DB8EC /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2E2A43C361F2C0CC9C7C8684 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				030DEC4D1437A5675F130EE4 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9EFF989AF7C656865E30F292 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F0419CA336F3CF69E020342 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A3B08BEB44790028BD3244A9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				029F6C7459DDCFB45B98E6A5 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A52927DEC4FA8EDF0DE10E57 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				531053AF74D70CE67E28F247 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		01E4C2918A536798B3FAD354 = {
+			isa = PBXGroup;
+			children = (
+				72040EAE7AA5521AEA76915B /* Podfile */,
+				64A6C8957BED0573B6FFF870 /* Frameworks */,
+				6D7CA31D07EE1BEE2618497F /* Pods */,
+				10C879E08D5E2EB4634132F9 /* Products */,
+				491E0E524B515D63A4C811B5 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		10C879E08D5E2EB4634132F9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				90FAD2B4C72EFCEC93AFC55D /* Alamofire.framework */,
+				E115850EF373A99996E31A4F /* HCYoutubeParser.framework */,
+				90F7E14DED63F3644269CAEE /* Pods_Visy.framework */,
+				F254A69651E29438136BB45D /* Spring.framework */,
+				B6600DEABBE19A47661C7E4C /* SwiftyJSON.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		14423F3A84514F56E828A2F3 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				811E92BA21E4B39C271DD8F1 /* Info.plist */,
+				42C050541F96EE52A98A8FA0 /* Pods-Visy-Spring.modulemap */,
+				FA18E7DA41AF3A81D92E682B /* Pods-Visy-Spring.xcconfig */,
+				746D53EE2E6FFE9765087778 /* Pods-Visy-Spring-Private.xcconfig */,
+				4F976C7E5CDAA399C302B290 /* Pods-Visy-Spring-dummy.m */,
+				320F3C0BBEC9A6389C1C6823 /* Pods-Visy-Spring-prefix.pch */,
+				B0A572873782B48D29C5F14A /* Pods-Visy-Spring-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pods-Visy-Spring";
+			sourceTree = "<group>";
+		};
+		3ED6FE2E965B4ED40CAE3944 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				518658D028C9C9DC6B4C0B17 /* Info.plist */,
+				FDE2599A4BFC6C0DAFD74BFF /* Pods-Visy-HCYoutubeParser.modulemap */,
+				DF9AB10C378AC4FADCF40798 /* Pods-Visy-HCYoutubeParser.xcconfig */,
+				49E9CF1CAC573A6336EABFFC /* Pods-Visy-HCYoutubeParser-Private.xcconfig */,
+				DDF1DF82A2B0878A9B5D8360 /* Pods-Visy-HCYoutubeParser-dummy.m */,
+				E994EA60421D26F5E7652B74 /* Pods-Visy-HCYoutubeParser-prefix.pch */,
+				C0EB7AEA8F4AB895AE9DCD30 /* Pods-Visy-HCYoutubeParser-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pods-Visy-HCYoutubeParser";
+			sourceTree = "<group>";
+		};
+		491E0E524B515D63A4C811B5 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				92AA61AFFA6772C7B95430AD /* Pods-Visy */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		4C52E8688FD2B2895799466D /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				87AA57282E2E02384D1D7D6A /* Info.plist */,
+				055EFC57BCE507A61F189930 /* Pods-Visy-Alamofire.modulemap */,
+				1C391577BF94281D569DC651 /* Pods-Visy-Alamofire.xcconfig */,
+				C3EEAE47BDA747BBF5537CB6 /* Pods-Visy-Alamofire-Private.xcconfig */,
+				89F903E6B8592354B498B345 /* Pods-Visy-Alamofire-dummy.m */,
+				EA9207D4B192EAAB6CED067B /* Pods-Visy-Alamofire-prefix.pch */,
+				E4ABC8CC4B43AF714D1470EA /* Pods-Visy-Alamofire-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pods-Visy-Alamofire";
+			sourceTree = "<group>";
+		};
+		600F4580B5C2AB899B5E6512 /* HCYoutubeParser */ = {
+			isa = PBXGroup;
+			children = (
+				1B5EE6742088E4E4CEF4BC4A /* HCYoutubeParser.h */,
+				3C36EDABB98CD82A7298DD23 /* HCYoutubeParser.m */,
+				3ED6FE2E965B4ED40CAE3944 /* Support Files */,
+			);
+			path = HCYoutubeParser;
+			sourceTree = "<group>";
+		};
+		6346B6162576859460C85AC7 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				AB32DFC8EFD296D95051E86C /* Info.plist */,
+				A8D7F600AB8AB51E2D4ADD45 /* Pods-Visy-SwiftyJSON.modulemap */,
+				F5BCE2DCC76070728895F87E /* Pods-Visy-SwiftyJSON.xcconfig */,
+				DEC4138B01D3E1F2F4C2B243 /* Pods-Visy-SwiftyJSON-Private.xcconfig */,
+				61A974D89392C8F7A6B956A1 /* Pods-Visy-SwiftyJSON-dummy.m */,
+				85291725A257245B1333806C /* Pods-Visy-SwiftyJSON-prefix.pch */,
+				5303F59905EBE1693B25DDD5 /* Pods-Visy-SwiftyJSON-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pods-Visy-SwiftyJSON";
+			sourceTree = "<group>";
+		};
+		64A6C8957BED0573B6FFF870 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D10A635FD537003482C0A80D /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		67018473CCC5A951450101BE /* Spring */ = {
+			isa = PBXGroup;
+			children = (
+				51DF28D222506E242C0E1B59 /* AsyncButton.swift */,
+				2606B580915D97E4D0AFAB2F /* AsyncImageView.swift */,
+				304767169FD7FB5CD36D33A1 /* AutoTextView.swift */,
+				8D4B191719CE2A87DB578FC6 /* BlurView.swift */,
+				D35391CD4BE830DD103BAE51 /* DesignableButton.swift */,
+				521CA953932E0D5B0E80C338 /* DesignableImageView.swift */,
+				A2B77C293CF51D50CDB5E280 /* DesignableLabel.swift */,
+				9E3EF3281103548BA569681E /* DesignableTabBarController.swift */,
+				799232574691E7F94F3E20D9 /* DesignableTextField.swift */,
+				FDF37439A514C06519C6B4A7 /* DesignableTextView.swift */,
+				0C3F1CECA8D6A7764142877D /* DesignableView.swift */,
+				027128EB27C89FB6E1D160EB /* ImageLoader.swift */,
+				18E9B0343541BC54DEFE53DB /* KeyboardLayoutConstraint.swift */,
+				C7B6E24886E615D32B4C7440 /* LoadingView.swift */,
+				E8B48E5FFE50B231C338F55E /* Misc.swift */,
+				3B2280773CAEF5DA51629231 /* SoundPlayer.swift */,
+				42545A3695A580876C5C3AD5 /* Spring.swift */,
+				0D5797386D7BB714769ED24C /* SpringAnimation.swift */,
+				89FC3B5168207B69A4796818 /* SpringButton.swift */,
+				AD14BE912EB23687F01006B8 /* SpringImageView.swift */,
+				DCD4C0DF0B5A55863E86477A /* SpringLabel.swift */,
+				A6646E44351CE6858CA1F9D4 /* SpringTextField.swift */,
+				1EAFD0825AF4711EF26F388A /* SpringTextView.swift */,
+				7C9458ACE283612330804919 /* SpringView.swift */,
+				48B24E16D3D58F682C122C30 /* TransitionManager.swift */,
+				9177021433491A8C1A699962 /* TransitionZoom.swift */,
+				D535E4D42DA086A4B81DCFAE /* UnwindSegue.swift */,
+				E0E2F1DCDA8728BC991A46A4 /* Resources */,
+				14423F3A84514F56E828A2F3 /* Support Files */,
+			);
+			path = Spring;
+			sourceTree = "<group>";
+		};
+		6D7CA31D07EE1BEE2618497F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E2268E3617A2C406330DDE73 /* Alamofire */,
+				600F4580B5C2AB899B5E6512 /* HCYoutubeParser */,
+				67018473CCC5A951450101BE /* Spring */,
+				C2165A01D93C22B995B0565A /* SwiftyJSON */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		92AA61AFFA6772C7B95430AD /* Pods-Visy */ = {
+			isa = PBXGroup;
+			children = (
+				25B8939B25377291DF27E4E8 /* Info.plist */,
+				41BC5556E4636E408B2A9BD6 /* Pods-Visy.modulemap */,
+				6BCF43254EEDBFC38F9FC3A3 /* Pods-Visy-acknowledgements.markdown */,
+				1B46B76C7261894BAB7C619B /* Pods-Visy-acknowledgements.plist */,
+				C0A697C9229F2D261DF8E5C5 /* Pods-Visy-dummy.m */,
+				32CFAE52031EB693D1402E13 /* Pods-Visy-environment.h */,
+				5EDA286A76FADC882766DF89 /* Pods-Visy-frameworks.sh */,
+				FD3C88336804D70475B4FFA7 /* Pods-Visy-resources.sh */,
+				D02E17612C1D25CF6AA73A18 /* Pods-Visy-umbrella.h */,
+				58FEDA24BE9BD0F0A2C6C061 /* Pods-Visy.debug.xcconfig */,
+				C0D9C5C0F422B4BA6E1B1B1B /* Pods-Visy.release.xcconfig */,
+			);
+			name = "Pods-Visy";
+			path = "Target Support Files/Pods-Visy";
+			sourceTree = "<group>";
+		};
+		C2165A01D93C22B995B0565A /* SwiftyJSON */ = {
+			isa = PBXGroup;
+			children = (
+				20E7EAD8559AAC9E20D96045 /* SwiftyJSON.swift */,
+				6346B6162576859460C85AC7 /* Support Files */,
+			);
+			path = SwiftyJSON;
+			sourceTree = "<group>";
+		};
+		D10A635FD537003482C0A80D /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				5102922F99336B31CE2D6BCA /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		E0E2F1DCDA8728BC991A46A4 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3FA7F910A35E90C16A914172 /* Images.xcassets */,
+				F0BC2732CD0FFA9619E5DBBD /* LoadingView.xib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		E2268E3617A2C406330DDE73 /* Alamofire */ = {
+			isa = PBXGroup;
+			children = (
+				1BC4DDDD011ABC5B22FE9F71 /* Alamofire.swift */,
+				4A33349BA7EC308D809AAC3F /* Download.swift */,
+				08034274E527AA7B90B743DC /* Error.swift */,
+				DD2CA53D06C992D527236813 /* Manager.swift */,
+				5051FF7303D40DECE5AC232C /* MultipartFormData.swift */,
+				52C8D161ACC3F722F64BEC7B /* ParameterEncoding.swift */,
+				36E9590CEC7675D5B78E6BC4 /* Request.swift */,
+				1C1EAE3300AF92769AB0078E /* Response.swift */,
+				E0A7B7902D93FA630A500154 /* ResponseSerialization.swift */,
+				3DEF0ED7D88BD5674334A125 /* Result.swift */,
+				0DD7F11108E0D63526E9123F /* ServerTrustPolicy.swift */,
+				6764F1C757242E09D566F75C /* Stream.swift */,
+				9BFC4A09B7DEF7FB8F4FB982 /* Upload.swift */,
+				0DB75FE20DCB78A30870B9F2 /* Validation.swift */,
+				4C52E8688FD2B2895799466D /* Support Files */,
+			);
+			path = Alamofire;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		0205488D30D72271B39061E0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F64839298464D541D230F0E4 /* Pods-Visy-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1B9213EFFE52880505E2FA71 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E6E177381BD12334CCC5C7C7 /* Pods-Visy-Alamofire-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		56032FA92B93A01D0779CC9C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				624304CE3A80A1EAB51F42DB /* Pods-Visy-Spring-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		99901100985C5CFE5DECB308 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B784A82232B6CF07229F2014 /* Pods-Visy-SwiftyJSON-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C294036926992071FE78E160 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55CD815E43DC54AF55132E18 /* HCYoutubeParser.h in Headers */,
+				57EFF52E92DFC351AD3F71D4 /* Pods-Visy-HCYoutubeParser-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		045EC427C1A17F5665F800A6 /* Pods-Visy-HCYoutubeParser */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 31F916588AFF7160766F9824 /* Build configuration list for PBXNativeTarget "Pods-Visy-HCYoutubeParser" */;
+			buildPhases = (
+				BE8367243CB04F87C6CB67F3 /* Sources */,
+				2E2A43C361F2C0CC9C7C8684 /* Frameworks */,
+				C294036926992071FE78E160 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-Visy-HCYoutubeParser";
+			productName = "Pods-Visy-HCYoutubeParser";
+			productReference = E115850EF373A99996E31A4F /* HCYoutubeParser.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		0D0C3DAC6C1EE45EC3EE104D /* Pods-Visy-Alamofire */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 88AA0566EAB77D420952003F /* Build configuration list for PBXNativeTarget "Pods-Visy-Alamofire" */;
+			buildPhases = (
+				9470514C53AC5A7F9C9C429F /* Sources */,
+				A3B08BEB44790028BD3244A9 /* Frameworks */,
+				1B9213EFFE52880505E2FA71 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-Visy-Alamofire";
+			productName = "Pods-Visy-Alamofire";
+			productReference = 90FAD2B4C72EFCEC93AFC55D /* Alamofire.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		4017F50856381B3D0B3D5FF6 /* Pods-Visy-SwiftyJSON */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A9A4CE7728CCD474DCF3E4B0 /* Build configuration list for PBXNativeTarget "Pods-Visy-SwiftyJSON" */;
+			buildPhases = (
+				27E2D1243C0FBFC5A9AC014B /* Sources */,
+				9EFF989AF7C656865E30F292 /* Frameworks */,
+				99901100985C5CFE5DECB308 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-Visy-SwiftyJSON";
+			productName = "Pods-Visy-SwiftyJSON";
+			productReference = B6600DEABBE19A47661C7E4C /* SwiftyJSON.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		9370614FABF9DD68361029E2 /* Pods-Visy-Spring */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DED6854DCA06425D10203C90 /* Build configuration list for PBXNativeTarget "Pods-Visy-Spring" */;
+			buildPhases = (
+				739BA8274845BE822D626B22 /* Sources */,
+				179F35F06CD8CE15C33D3CC9 /* Frameworks */,
+				AFC9488B5A2C288CB981E2F8 /* Resources */,
+				56032FA92B93A01D0779CC9C /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-Visy-Spring";
+			productName = "Pods-Visy-Spring";
+			productReference = F254A69651E29438136BB45D /* Spring.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		E69EF8CB370F5F6C54342AD0 /* Pods-Visy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F61B91C636DED0E682DE0504 /* Build configuration list for PBXNativeTarget "Pods-Visy" */;
+			buildPhases = (
+				3F3A4C050EE3BAF8BA2A5896 /* Sources */,
+				A52927DEC4FA8EDF0DE10E57 /* Frameworks */,
+				0205488D30D72271B39061E0 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7720DEC65FA45DD8F5BB3481 /* PBXTargetDependency */,
+				962EF5E0811E3A40898332EA /* PBXTargetDependency */,
+				C3FA49F2258D142DE2475952 /* PBXTargetDependency */,
+				C0C793A211C95DDC7666A0B9 /* PBXTargetDependency */,
+			);
+			name = "Pods-Visy";
+			productName = "Pods-Visy";
+			productReference = 90F7E14DED63F3644269CAEE /* Pods_Visy.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5638FF16531AA84A6E216901 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0710;
+				LastUpgradeCheck = 0640;
+			};
+			buildConfigurationList = 9B5670C26313405B96659442 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 01E4C2918A536798B3FAD354;
+			productRefGroup = 10C879E08D5E2EB4634132F9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E69EF8CB370F5F6C54342AD0 /* Pods-Visy */,
+				0D0C3DAC6C1EE45EC3EE104D /* Pods-Visy-Alamofire */,
+				045EC427C1A17F5665F800A6 /* Pods-Visy-HCYoutubeParser */,
+				9370614FABF9DD68361029E2 /* Pods-Visy-Spring */,
+				4017F50856381B3D0B3D5FF6 /* Pods-Visy-SwiftyJSON */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AFC9488B5A2C288CB981E2F8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E3A5D0C6263CB453001145EF /* Images.xcassets in Resources */,
+				53EE7F3B82C3A944EFC001E7 /* LoadingView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		27E2D1243C0FBFC5A9AC014B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				415B026ABEBDE9AD91725C2D /* Pods-Visy-SwiftyJSON-dummy.m in Sources */,
+				4CCEA1655FCE4F0E240721A7 /* SwiftyJSON.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F3A4C050EE3BAF8BA2A5896 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E06DA82DB8F994A6921674C2 /* Pods-Visy-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		739BA8274845BE822D626B22 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1550F3B023A593CCBA7D700B /* AsyncButton.swift in Sources */,
+				2202FEB8124B3EFA6AB42693 /* AsyncImageView.swift in Sources */,
+				57A03B258173FD5595A64269 /* AutoTextView.swift in Sources */,
+				CDED5A94F942A503FEE13374 /* BlurView.swift in Sources */,
+				67D8A1DB06B30815DD2A9513 /* DesignableButton.swift in Sources */,
+				51227078C231287718383EAE /* DesignableImageView.swift in Sources */,
+				79FA12C20EAFB763D4E59248 /* DesignableLabel.swift in Sources */,
+				7BB8EF4C416825EB2276392F /* DesignableTabBarController.swift in Sources */,
+				85BB2463D79EA137ADAE8140 /* DesignableTextField.swift in Sources */,
+				726D8F82E416FB0819F6258E /* DesignableTextView.swift in Sources */,
+				59D0096D619CF61B251C7653 /* DesignableView.swift in Sources */,
+				9141441BEC5A3413DCDC94ED /* ImageLoader.swift in Sources */,
+				C7E1DB85004524EF2FF4F6FF /* KeyboardLayoutConstraint.swift in Sources */,
+				3C9CD3FDCB34015DCF16C93C /* LoadingView.swift in Sources */,
+				294C56962C4A892928B7CDFA /* Misc.swift in Sources */,
+				DC681A918926B6D6D5BD8261 /* Pods-Visy-Spring-dummy.m in Sources */,
+				25DDF7E39FDF3AFA158F56F6 /* SoundPlayer.swift in Sources */,
+				CD967F0A2290F9A37192018C /* Spring.swift in Sources */,
+				329F4A921F0CFC384184CA15 /* SpringAnimation.swift in Sources */,
+				83327BCF7E1A9068CCC17D43 /* SpringButton.swift in Sources */,
+				542939B0813157BE7741D53C /* SpringImageView.swift in Sources */,
+				C831AF9E4A4E046E0F7F9D8E /* SpringLabel.swift in Sources */,
+				732ABB22F1EFE9C010093238 /* SpringTextField.swift in Sources */,
+				DADE7BE4337F9246BEFBBC5E /* SpringTextView.swift in Sources */,
+				3662888D7DA64E13776343E7 /* SpringView.swift in Sources */,
+				AE9B512699828AEB2849C417 /* TransitionManager.swift in Sources */,
+				7A07B99785E6D48C1EAFE85E /* TransitionZoom.swift in Sources */,
+				C0731D86ADFBBCB48A59E6D9 /* UnwindSegue.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9470514C53AC5A7F9C9C429F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5811BCECFB76B87F5DCB3EFC /* Alamofire.swift in Sources */,
+				B42CC6F6C6AFE460873A3D09 /* Download.swift in Sources */,
+				0B7BE3CE11405B350C1195EB /* Error.swift in Sources */,
+				397692D642DBCE6407B502D1 /* Manager.swift in Sources */,
+				3E79F8D39D89219A1FD9071B /* MultipartFormData.swift in Sources */,
+				B44D61943F4792F8E8FBBD09 /* ParameterEncoding.swift in Sources */,
+				510990A955D9A99E24790A75 /* Pods-Visy-Alamofire-dummy.m in Sources */,
+				936D9A6959EE5269E4934BED /* Request.swift in Sources */,
+				30B9D22F2EBB0C325BA9E5E1 /* Response.swift in Sources */,
+				D63EDFAEC1D3A377AA198E8D /* ResponseSerialization.swift in Sources */,
+				E7BC2AB75C31BBC4C4D02DCF /* Result.swift in Sources */,
+				E0A646A64A8606AD33EAEE04 /* ServerTrustPolicy.swift in Sources */,
+				D5B941E5E66521B86CD26D0F /* Stream.swift in Sources */,
+				6D1A7659E4A26C53D1A1A5F0 /* Upload.swift in Sources */,
+				CA53286F5471C282439D2807 /* Validation.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE8367243CB04F87C6CB67F3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B30BE6519F3772478550C25A /* HCYoutubeParser.m in Sources */,
+				CC64F323EACFE74821796919 /* Pods-Visy-HCYoutubeParser-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7720DEC65FA45DD8F5BB3481 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-Visy-Alamofire";
+			target = 0D0C3DAC6C1EE45EC3EE104D /* Pods-Visy-Alamofire */;
+			targetProxy = 0E59AF419A172DF890649F19 /* PBXContainerItemProxy */;
+		};
+		962EF5E0811E3A40898332EA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-Visy-HCYoutubeParser";
+			target = 045EC427C1A17F5665F800A6 /* Pods-Visy-HCYoutubeParser */;
+			targetProxy = 42276555E871E85540433488 /* PBXContainerItemProxy */;
+		};
+		C0C793A211C95DDC7666A0B9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-Visy-SwiftyJSON";
+			target = 4017F50856381B3D0B3D5FF6 /* Pods-Visy-SwiftyJSON */;
+			targetProxy = AE1874955E8E0A56EAAB05ED /* PBXContainerItemProxy */;
+		};
+		C3FA49F2258D142DE2475952 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-Visy-Spring";
+			target = 9370614FABF9DD68361029E2 /* Pods-Visy-Spring */;
+			targetProxy = 6EAFDFCEE3E3117BE48562BF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		100E65974ECE206518C85311 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		27259F61AAEDC2D8A37D8C00 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 49E9CF1CAC573A6336EABFFC /* Pods-Visy-HCYoutubeParser-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-Visy-HCYoutubeParser/Pods-Visy-HCYoutubeParser-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-Visy-HCYoutubeParser/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-Visy-HCYoutubeParser/Pods-Visy-HCYoutubeParser.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = HCYoutubeParser;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		3150F12A5FD52C9B0E8C61C9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DEC4138B01D3E1F2F4C2B243 /* Pods-Visy-SwiftyJSON-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-Visy-SwiftyJSON/Pods-Visy-SwiftyJSON-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-Visy-SwiftyJSON/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-Visy-SwiftyJSON/Pods-Visy-SwiftyJSON.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = SwiftyJSON;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		717457757B28C33DC8A80EEF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DEC4138B01D3E1F2F4C2B243 /* Pods-Visy-SwiftyJSON-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-Visy-SwiftyJSON/Pods-Visy-SwiftyJSON-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-Visy-SwiftyJSON/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-Visy-SwiftyJSON/Pods-Visy-SwiftyJSON.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = SwiftyJSON;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		7D5CCE1459D40C4CEB063688 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 58FEDA24BE9BD0F0A2C6C061 /* Pods-Visy.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Visy/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-Visy/Pods-Visy.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_Visy;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		8058BE3B5E3A1C72F0C87F79 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C3EEAE47BDA747BBF5537CB6 /* Pods-Visy-Alamofire-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-Visy-Alamofire/Pods-Visy-Alamofire-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-Visy-Alamofire/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-Visy-Alamofire/Pods-Visy-Alamofire.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = Alamofire;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A3BA710F5C384D7FBC698F3B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		ADCD3CAF395D773FD52EE040 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 746D53EE2E6FFE9765087778 /* Pods-Visy-Spring-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-Visy-Spring/Pods-Visy-Spring-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-Visy-Spring/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-Visy-Spring/Pods-Visy-Spring.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Spring;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		B6A5B7EE7F01A13B653B4F13 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C3EEAE47BDA747BBF5537CB6 /* Pods-Visy-Alamofire-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-Visy-Alamofire/Pods-Visy-Alamofire-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-Visy-Alamofire/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-Visy-Alamofire/Pods-Visy-Alamofire.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Alamofire;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		BA6780057871B1B761C9F240 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 746D53EE2E6FFE9765087778 /* Pods-Visy-Spring-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-Visy-Spring/Pods-Visy-Spring-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-Visy-Spring/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-Visy-Spring/Pods-Visy-Spring.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = Spring;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C51A92F0E8B6BFCA522F16CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C0D9C5C0F422B4BA6E1B1B1B /* Pods-Visy.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Visy/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-Visy/Pods-Visy.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_Visy;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		CBDA2FC684526E27ADB0B4CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 49E9CF1CAC573A6336EABFFC /* Pods-Visy-HCYoutubeParser-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-Visy-HCYoutubeParser/Pods-Visy-HCYoutubeParser-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-Visy-HCYoutubeParser/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-Visy-HCYoutubeParser/Pods-Visy-HCYoutubeParser.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = HCYoutubeParser;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		31F916588AFF7160766F9824 /* Build configuration list for PBXNativeTarget "Pods-Visy-HCYoutubeParser" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CBDA2FC684526E27ADB0B4CB /* Debug */,
+				27259F61AAEDC2D8A37D8C00 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		88AA0566EAB77D420952003F /* Build configuration list for PBXNativeTarget "Pods-Visy-Alamofire" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8058BE3B5E3A1C72F0C87F79 /* Debug */,
+				B6A5B7EE7F01A13B653B4F13 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9B5670C26313405B96659442 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				100E65974ECE206518C85311 /* Debug */,
+				A3BA710F5C384D7FBC698F3B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A9A4CE7728CCD474DCF3E4B0 /* Build configuration list for PBXNativeTarget "Pods-Visy-SwiftyJSON" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				717457757B28C33DC8A80EEF /* Debug */,
+				3150F12A5FD52C9B0E8C61C9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DED6854DCA06425D10203C90 /* Build configuration list for PBXNativeTarget "Pods-Visy-Spring" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BA6780057871B1B761C9F240 /* Debug */,
+				ADCD3CAF395D773FD52EE040 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F61B91C636DED0E682DE0504 /* Build configuration list for PBXNativeTarget "Pods-Visy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7D5CCE1459D40C4CEB063688 /* Debug */,
+				C51A92F0E8B6BFCA522F16CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5638FF16531AA84A6E216901 /* Project object */;
+}

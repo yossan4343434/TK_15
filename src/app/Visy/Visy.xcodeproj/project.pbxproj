@@ -1,0 +1,607 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EDDB2D3F1C0970320069DDBD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDDB2D3E1C0970320069DDBD /* AppDelegate.swift */; };
+		EDDB2D441C0970320069DDBD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDDB2D421C0970320069DDBD /* Main.storyboard */; };
+		EDDB2D461C0970330069DDBD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDDB2D451C0970330069DDBD /* Assets.xcassets */; };
+		EDDB2D491C0970330069DDBD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDDB2D471C0970330069DDBD /* LaunchScreen.storyboard */; };
+		EDDB2D541C0970330069DDBD /* VisyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDDB2D531C0970330069DDBD /* VisyTests.swift */; };
+		EDDB2D5F1C0970330069DDBD /* VisyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDDB2D5E1C0970330069DDBD /* VisyUITests.swift */; };
+		EDDB2D6D1C0970580069DDBD /* VSMovieListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDDB2D6C1C0970580069DDBD /* VSMovieListViewController.swift */; };
+		EDDB2D701C09712E0069DDBD /* VSMovieListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDDB2D6E1C09712E0069DDBD /* VSMovieListCell.swift */; };
+		EDDB2D711C09712E0069DDBD /* VSMovieListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EDDB2D6F1C09712E0069DDBD /* VSMovieListCell.xib */; };
+		EDDB2D731C0979DC0069DDBD /* VSMoviePlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDDB2D721C0979DC0069DDBD /* VSMoviePlayerViewController.swift */; };
+		EDDB2D751C0986300069DDBD /* VSSound.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDDB2D741C0986300069DDBD /* VSSound.swift */; };
+		EDDB2D791C09A6460069DDBD /* Resource in Resources */ = {isa = PBXBuildFile; fileRef = EDDB2D781C09A6460069DDBD /* Resource */; };
+		EDF14DA77B1F1F1CDA8AC9AE /* Pods_Visy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B29FC8D26F9CDBD0AE29736C /* Pods_Visy.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EDDB2D501C0970330069DDBD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EDDB2D331C0970320069DDBD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EDDB2D3A1C0970320069DDBD;
+			remoteInfo = Visy;
+		};
+		EDDB2D5B1C0970330069DDBD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EDDB2D331C0970320069DDBD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EDDB2D3A1C0970320069DDBD;
+			remoteInfo = Visy;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		53CD1A1EC6D0F838F662AF8A /* Pods-Visy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Visy.release.xcconfig"; path = "Pods/Target Support Files/Pods-Visy/Pods-Visy.release.xcconfig"; sourceTree = "<group>"; };
+		9AB6BFA1525693B6D76C6CDB /* Pods-Visy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Visy.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Visy/Pods-Visy.debug.xcconfig"; sourceTree = "<group>"; };
+		B29FC8D26F9CDBD0AE29736C /* Pods_Visy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Visy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EDDB2D3B1C0970320069DDBD /* Visy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Visy.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EDDB2D3E1C0970320069DDBD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EDDB2D431C0970320069DDBD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EDDB2D451C0970330069DDBD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EDDB2D481C0970330069DDBD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EDDB2D4A1C0970330069DDBD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EDDB2D4F1C0970330069DDBD /* VisyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VisyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EDDB2D531C0970330069DDBD /* VisyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisyTests.swift; sourceTree = "<group>"; };
+		EDDB2D551C0970330069DDBD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EDDB2D5A1C0970330069DDBD /* VisyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VisyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EDDB2D5E1C0970330069DDBD /* VisyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisyUITests.swift; sourceTree = "<group>"; };
+		EDDB2D601C0970330069DDBD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EDDB2D6C1C0970580069DDBD /* VSMovieListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VSMovieListViewController.swift; sourceTree = "<group>"; };
+		EDDB2D6E1C09712E0069DDBD /* VSMovieListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VSMovieListCell.swift; sourceTree = "<group>"; };
+		EDDB2D6F1C09712E0069DDBD /* VSMovieListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VSMovieListCell.xib; sourceTree = "<group>"; };
+		EDDB2D721C0979DC0069DDBD /* VSMoviePlayerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VSMoviePlayerViewController.swift; sourceTree = "<group>"; };
+		EDDB2D741C0986300069DDBD /* VSSound.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VSSound.swift; sourceTree = "<group>"; };
+		EDDB2D781C09A6460069DDBD /* Resource */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Resource; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EDDB2D381C0970320069DDBD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDF14DA77B1F1F1CDA8AC9AE /* Pods_Visy.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDDB2D4C1C0970330069DDBD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDDB2D571C0970330069DDBD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		19931D1CD97E6FB639BAD60C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B29FC8D26F9CDBD0AE29736C /* Pods_Visy.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8C783DE7235A65F3A48908C9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9AB6BFA1525693B6D76C6CDB /* Pods-Visy.debug.xcconfig */,
+				53CD1A1EC6D0F838F662AF8A /* Pods-Visy.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		EDDB2D321C0970320069DDBD = {
+			isa = PBXGroup;
+			children = (
+				EDDB2D3D1C0970320069DDBD /* Visy */,
+				EDDB2D521C0970330069DDBD /* VisyTests */,
+				EDDB2D5D1C0970330069DDBD /* VisyUITests */,
+				EDDB2D3C1C0970320069DDBD /* Products */,
+				8C783DE7235A65F3A48908C9 /* Pods */,
+				19931D1CD97E6FB639BAD60C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		EDDB2D3C1C0970320069DDBD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EDDB2D3B1C0970320069DDBD /* Visy.app */,
+				EDDB2D4F1C0970330069DDBD /* VisyTests.xctest */,
+				EDDB2D5A1C0970330069DDBD /* VisyUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EDDB2D3D1C0970320069DDBD /* Visy */ = {
+			isa = PBXGroup;
+			children = (
+				EDDB2D3E1C0970320069DDBD /* AppDelegate.swift */,
+				EDDB2D421C0970320069DDBD /* Main.storyboard */,
+				EDDB2D741C0986300069DDBD /* VSSound.swift */,
+				EDDB2D6C1C0970580069DDBD /* VSMovieListViewController.swift */,
+				EDDB2D6E1C09712E0069DDBD /* VSMovieListCell.swift */,
+				EDDB2D6F1C09712E0069DDBD /* VSMovieListCell.xib */,
+				EDDB2D721C0979DC0069DDBD /* VSMoviePlayerViewController.swift */,
+				EDDB2D451C0970330069DDBD /* Assets.xcassets */,
+				EDDB2D471C0970330069DDBD /* LaunchScreen.storyboard */,
+				EDDB2D4A1C0970330069DDBD /* Info.plist */,
+				EDDB2D781C09A6460069DDBD /* Resource */,
+			);
+			path = Visy;
+			sourceTree = "<group>";
+		};
+		EDDB2D521C0970330069DDBD /* VisyTests */ = {
+			isa = PBXGroup;
+			children = (
+				EDDB2D531C0970330069DDBD /* VisyTests.swift */,
+				EDDB2D551C0970330069DDBD /* Info.plist */,
+			);
+			path = VisyTests;
+			sourceTree = "<group>";
+		};
+		EDDB2D5D1C0970330069DDBD /* VisyUITests */ = {
+			isa = PBXGroup;
+			children = (
+				EDDB2D5E1C0970330069DDBD /* VisyUITests.swift */,
+				EDDB2D601C0970330069DDBD /* Info.plist */,
+			);
+			path = VisyUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EDDB2D3A1C0970320069DDBD /* Visy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EDDB2D631C0970330069DDBD /* Build configuration list for PBXNativeTarget "Visy" */;
+			buildPhases = (
+				600BDF355292FC02DA45D0F2 /* Check Pods Manifest.lock */,
+				EDDB2D371C0970320069DDBD /* Sources */,
+				EDDB2D381C0970320069DDBD /* Frameworks */,
+				EDDB2D391C0970320069DDBD /* Resources */,
+				C6578440EB35206F9B1D1B5E /* Embed Pods Frameworks */,
+				FE09F2BA909FC78FAF0096A0 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Visy;
+			productName = Visy;
+			productReference = EDDB2D3B1C0970320069DDBD /* Visy.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EDDB2D4E1C0970330069DDBD /* VisyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EDDB2D661C0970330069DDBD /* Build configuration list for PBXNativeTarget "VisyTests" */;
+			buildPhases = (
+				EDDB2D4B1C0970330069DDBD /* Sources */,
+				EDDB2D4C1C0970330069DDBD /* Frameworks */,
+				EDDB2D4D1C0970330069DDBD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EDDB2D511C0970330069DDBD /* PBXTargetDependency */,
+			);
+			name = VisyTests;
+			productName = VisyTests;
+			productReference = EDDB2D4F1C0970330069DDBD /* VisyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EDDB2D591C0970330069DDBD /* VisyUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EDDB2D691C0970330069DDBD /* Build configuration list for PBXNativeTarget "VisyUITests" */;
+			buildPhases = (
+				EDDB2D561C0970330069DDBD /* Sources */,
+				EDDB2D571C0970330069DDBD /* Frameworks */,
+				EDDB2D581C0970330069DDBD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EDDB2D5C1C0970330069DDBD /* PBXTargetDependency */,
+			);
+			name = VisyUITests;
+			productName = VisyUITests;
+			productReference = EDDB2D5A1C0970330069DDBD /* VisyUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EDDB2D331C0970320069DDBD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0710;
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = TK_15;
+				TargetAttributes = {
+					EDDB2D3A1C0970320069DDBD = {
+						CreatedOnToolsVersion = 7.1.1;
+					};
+					EDDB2D4E1C0970330069DDBD = {
+						CreatedOnToolsVersion = 7.1.1;
+						TestTargetID = EDDB2D3A1C0970320069DDBD;
+					};
+					EDDB2D591C0970330069DDBD = {
+						CreatedOnToolsVersion = 7.1.1;
+						TestTargetID = EDDB2D3A1C0970320069DDBD;
+					};
+				};
+			};
+			buildConfigurationList = EDDB2D361C0970320069DDBD /* Build configuration list for PBXProject "Visy" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EDDB2D321C0970320069DDBD;
+			productRefGroup = EDDB2D3C1C0970320069DDBD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EDDB2D3A1C0970320069DDBD /* Visy */,
+				EDDB2D4E1C0970330069DDBD /* VisyTests */,
+				EDDB2D591C0970330069DDBD /* VisyUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EDDB2D391C0970320069DDBD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDDB2D491C0970330069DDBD /* LaunchScreen.storyboard in Resources */,
+				EDDB2D791C09A6460069DDBD /* Resource in Resources */,
+				EDDB2D711C09712E0069DDBD /* VSMovieListCell.xib in Resources */,
+				EDDB2D461C0970330069DDBD /* Assets.xcassets in Resources */,
+				EDDB2D441C0970320069DDBD /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDDB2D4D1C0970330069DDBD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDDB2D581C0970330069DDBD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		600BDF355292FC02DA45D0F2 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C6578440EB35206F9B1D1B5E /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Visy/Pods-Visy-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FE09F2BA909FC78FAF0096A0 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Visy/Pods-Visy-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EDDB2D371C0970320069DDBD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDDB2D701C09712E0069DDBD /* VSMovieListCell.swift in Sources */,
+				EDDB2D751C0986300069DDBD /* VSSound.swift in Sources */,
+				EDDB2D3F1C0970320069DDBD /* AppDelegate.swift in Sources */,
+				EDDB2D6D1C0970580069DDBD /* VSMovieListViewController.swift in Sources */,
+				EDDB2D731C0979DC0069DDBD /* VSMoviePlayerViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDDB2D4B1C0970330069DDBD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDDB2D541C0970330069DDBD /* VisyTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDDB2D561C0970330069DDBD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDDB2D5F1C0970330069DDBD /* VisyUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EDDB2D511C0970330069DDBD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EDDB2D3A1C0970320069DDBD /* Visy */;
+			targetProxy = EDDB2D501C0970330069DDBD /* PBXContainerItemProxy */;
+		};
+		EDDB2D5C1C0970330069DDBD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EDDB2D3A1C0970320069DDBD /* Visy */;
+			targetProxy = EDDB2D5B1C0970330069DDBD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EDDB2D421C0970320069DDBD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EDDB2D431C0970320069DDBD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EDDB2D471C0970330069DDBD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EDDB2D481C0970330069DDBD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EDDB2D611C0970330069DDBD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EDDB2D621C0970330069DDBD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EDDB2D641C0970330069DDBD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9AB6BFA1525693B6D76C6CDB /* Pods-Visy.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Visy/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Visy;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		EDDB2D651C0970330069DDBD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 53CD1A1EC6D0F838F662AF8A /* Pods-Visy.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Visy/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Visy;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		EDDB2D671C0970330069DDBD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = VisyTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.VisyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Visy.app/Visy";
+			};
+			name = Debug;
+		};
+		EDDB2D681C0970330069DDBD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = VisyTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.VisyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Visy.app/Visy";
+			};
+			name = Release;
+		};
+		EDDB2D6A1C0970330069DDBD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = VisyUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.VisyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Visy;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		EDDB2D6B1C0970330069DDBD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = VisyUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.VisyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Visy;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EDDB2D361C0970320069DDBD /* Build configuration list for PBXProject "Visy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EDDB2D611C0970330069DDBD /* Debug */,
+				EDDB2D621C0970330069DDBD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EDDB2D631C0970330069DDBD /* Build configuration list for PBXNativeTarget "Visy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EDDB2D641C0970330069DDBD /* Debug */,
+				EDDB2D651C0970330069DDBD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EDDB2D661C0970330069DDBD /* Build configuration list for PBXNativeTarget "VisyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EDDB2D671C0970330069DDBD /* Debug */,
+				EDDB2D681C0970330069DDBD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EDDB2D691C0970330069DDBD /* Build configuration list for PBXNativeTarget "VisyUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EDDB2D6A1C0970330069DDBD /* Debug */,
+				EDDB2D6B1C0970330069DDBD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EDDB2D331C0970320069DDBD /* Project object */;
+}

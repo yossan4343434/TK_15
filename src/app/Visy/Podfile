@@ -1,0 +1,19 @@
+# Uncomment this line to define a global platform for your project
+# platform :ios, '6.0'
+use_frameworks!
+
+target 'Visy' do
+pod 'HCYoutubeParser'
+pod 'SwiftyJSON'
+pod 'Alamofire', '~> 3.0'
+pod 'Spring', :git => 'https://github.com/MengTo/Spring.git', :branch => 'swift2'
+end
+
+target 'VisyTests' do
+
+end
+
+target 'VisyUITests' do
+
+end
+

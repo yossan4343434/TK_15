@@ -1,0 +1,6 @@
+framework module HCYoutubeParser {
+  umbrella header "Pods-Visy-HCYoutubeParser-umbrella.h"
+
+  export *
+  module * { export * }
+}
