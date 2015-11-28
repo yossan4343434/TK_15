@@ -1,5 +1,6 @@
 #coding: UTF8
 
+import os
 import cv2
 import glob
 import shutil
@@ -19,10 +20,10 @@ rotation
 mono
 """
 
+ROOT = os.path.abspath(os.path.dirname(__file__))
 mode = "slide_multi5"
-#r_src = "/Users/Yamashita/Desktop/github_space/TK_15/data/rugby/original/preprocessed_goromaru/"
-r_src = "/Users/Yamashita/Desktop/github_space/TK_15/data/rugby/datasets/aug1/"
-r_dst = "/Users/Yamashita/Desktop/github_space/TK_15/data/rugby/datasets/aug2/"
+r_src = ROOT.replace("src/yamashita/preprocessing/", "data/rugby/original/preprocessed_goromaru/")
+r_dst = ROOT.replace("src/yamashita/preprocessing/", "data/rugby/original/goromaru_trts/")
 
 
 def multi_3(img, pix=3):
