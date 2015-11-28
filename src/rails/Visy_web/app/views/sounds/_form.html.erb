@@ -1,14 +1,14 @@
-<%= simple_form_for(@sound) do |f| %>
-  <%= f.error_notification %>
+<%= simple_form_for @sound, :html => { :class => 'form-horizontal' } do |f| %>
+  <%= f.input :name %>
+  <%= error_span(@sound[:name]) %>
+  <%= f.input :video_id %>
+  <%= error_span(@sound[:video_id]) %>
+  <%= f.input :playtime %>
+  <%= error_span(@sound[:playtime]) %>
+  <%= f.input :sound %>
+  <%= error_span(@sound[:sound]) %>
 
-  <div class="form-inputs">
-    <%= f.input :name %>
-    <%= f.input :video_id %>
-    <%= f.input :playtime %>
-    <%= f.input :sound %>
-  </div>
-
-  <div class="form-actions">
-    <%= f.button :submit %>
-  </div>
+  <%= f.button :submit, :class => 'btn-primary' %>
+  <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
+                sounds_path, :class => 'btn btn-default' %>
 <% end %>

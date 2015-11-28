@@ -7,6 +7,9 @@ class MinisoundsController < ApplicationController
     @minisounds = Minisound.all.order("playtime")
   end
 
+  def clean
+    Minisound.delete_all
+  end
   # GET /minisounds/1
   # GET /minisounds/1.json
   def show
@@ -69,6 +72,6 @@ class MinisoundsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def minisound_params
-      params.require(:minisound).permit(:movie_id, :name, :playtime)
+      params.require(:minisound).permit(:video_id, :name, :playtime)
     end
 end

@@ -6,7 +6,7 @@
   <thead>
     <tr>
       <th><%= model_class.human_attribute_name(:id) %></th>
-      <th><%= model_class.human_attribute_name(:movie_id) %></th>
+      <th><%= model_class.human_attribute_name(:video_id) %></th>
       <th><%= model_class.human_attribute_name(:name) %></th>
       <th><%= model_class.human_attribute_name(:playtime) %></th>
       <th><%= model_class.human_attribute_name(:created_at) %></th>
@@ -17,7 +17,7 @@
     <% @minisounds.each do |minisound| %>
       <tr>
         <td><%= link_to minisound.id, minisound_path(minisound) %></td>
-        <td><%= minisound.movie_id %></td>
+        <td><%= minisound.video_id %></td>
         <td><%= minisound.name %></td>
         <td><%= minisound.playtime %></td>
         <td><%=l minisound.created_at %></td>

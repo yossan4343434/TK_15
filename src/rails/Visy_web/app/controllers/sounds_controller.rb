@@ -21,21 +21,19 @@ class SoundsController < ApplicationController
   def edit
   end
 
-  def record
-    sound = Sound.find_or_create_by(name: params[:name])
-    sound.sound = params[:sound]
-    sound.save!
-    render json: {
-      name: sound.name,
-      sound: sound.sound
-    }
+  def download
+    sound = Sound.find_by(params[:id])
+    filename = sound.name
+    filepath = Rails.root.join('public/sound',filename)
+    stat = File::stat(filepath)
+    send_file(filepath, :filename => filename, :length => stat.size)
   end
 
   # POST /sounds
   # POST /sounds.json
   def create
     sound = Sound.find_or_create_by(name: params[:name])
-    sound.video_id = params[:video_id]
+    sound.video_id = params[:video_id].to_i
     sound.playtime = params[:playtime].to_f
     sound.sound = params[:sound]
     sound.save!

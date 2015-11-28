@@ -11,10 +11,10 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151128095058) do
+ActiveRecord::Schema.define(version: 20151128123749) do
 
   create_table "minisounds", force: :cascade do |t|
-    t.string   "movie_id",   limit: 255
+    t.integer  "video_id",   limit: 4
     t.string   "name",       limit: 255
     t.float    "playtime",   limit: 24
     t.datetime "created_at",             null: false
@@ -23,9 +23,16 @@ ActiveRecord::Schema.define(version: 20151128095058) do
 
   create_table "sounds", force: :cascade do |t|
     t.string   "name",       limit: 255
-    t.string   "video_id",   limit: 255
+    t.integer  "video_id",   limit: 4
     t.float    "playtime",   limit: 24
     t.string   "sound",      limit: 255
+    t.datetime "created_at",             null: false
+    t.datetime "updated_at",             null: false
+  end
+
+  create_table "videos", force: :cascade do |t|
+    t.string   "youtube_id", limit: 255
+    t.string   "name",       limit: 255
     t.datetime "created_at",             null: false
     t.datetime "updated_at",             null: false
   end

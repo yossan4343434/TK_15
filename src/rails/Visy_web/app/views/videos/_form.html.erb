@@ -1,0 +1,10 @@
+<%= simple_form_for @video, :html => { :class => 'form-horizontal' } do |f| %>
+  <%= f.input :video_hash %>
+  <%= error_span(@video[:video_hash]) %>
+  <%= f.input :name %>
+  <%= error_span(@video[:name]) %>
+
+  <%= f.button :submit, :class => 'btn-primary' %>
+  <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
+                videos_path, :class => 'btn btn-default' %>
+<% end %>

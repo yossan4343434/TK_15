@@ -18,7 +18,7 @@ class MinisoundsControllerTest < ActionController::TestCase
 
   test "should create minisound" do
     assert_difference('Minisound.count') do
-      post :create, minisound: { movie_id: @minisound.movie_id, name: @minisound.name, playtime: @minisound.playtime }
+      post :create, minisound: { video_id: @minisound.video_id, name: @minisound.name, playtime: @minisound.playtime }
     end
 
     assert_redirected_to minisound_path(assigns(:minisound))
@@ -35,7 +35,7 @@ class MinisoundsControllerTest < ActionController::TestCase
   end
 
   test "should update minisound" do
-    patch :update, id: @minisound, minisound: { movie_id: @minisound.movie_id, name: @minisound.name, playtime: @minisound.playtime }
+    patch :update, id: @minisound, minisound: { video_id: @minisound.video_id, name: @minisound.name, playtime: @minisound.playtime }
     assert_redirected_to minisound_path(assigns(:minisound))
   end
 
