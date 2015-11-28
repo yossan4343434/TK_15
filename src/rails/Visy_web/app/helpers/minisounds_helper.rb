@@ -1,0 +1,2 @@
+module MinisoundsHelper
+end

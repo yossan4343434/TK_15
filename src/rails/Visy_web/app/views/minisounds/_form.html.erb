@@ -1,0 +1,12 @@
+<%= simple_form_for @minisound, :html => { :class => 'form-horizontal' } do |f| %>
+  <%= f.input :movie_id %>
+  <%= error_span(@minisound[:movie_id]) %>
+  <%= f.input :name %>
+  <%= error_span(@minisound[:name]) %>
+  <%= f.input :playtime %>
+  <%= error_span(@minisound[:playtime]) %>
+
+  <%= f.button :submit, :class => 'btn-primary' %>
+  <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
+                minisounds_path, :class => 'btn btn-default' %>
+<% end %>
