@@ -7,6 +7,12 @@
 //
 
 import UIKit
+import HCYoutubeParser
+import MediaPlayer
+import Spring
+import AVFoundation
+import Alamofire
+import SwiftyJSON
 
 class VSMoviePlayerViewController: UIViewController {
 
