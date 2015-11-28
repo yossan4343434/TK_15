@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @sound.name %>
+</p>
+
+<p>
+  <strong>Video:</strong>
+  <%= @sound.video_id %>
+</p>
+
+<p>
+  <strong>Playtime:</strong>
+  <%= @sound.playtime %>
+</p>
+
+<p>
+  <strong>Sound:</strong>
+  <%= audio_tag(@sound.sound,:controls=>true)%>
+</p>
+
+<%= link_to 'Edit', edit_sound_path(@sound) %> |
+<%= link_to 'Back', sounds_path %>
