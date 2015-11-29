@@ -21,6 +21,8 @@ class VSMoviePlayerViewController: UIViewController, UITableViewDelegate, UITabl
     @IBOutlet weak var controlBarView: UIView!
     @IBOutlet weak var sceneTableView: UITableView!
     @IBOutlet weak var soundButton: UIButton!
+    @IBOutlet weak var nextSceneButton: UIButton!
+    @IBOutlet weak var prevSceneButton: UIButton!
     @IBOutlet weak var recButton: UIButton!
 
     var youtubeId = String()
@@ -111,6 +113,7 @@ class VSMoviePlayerViewController: UIViewController, UITableViewDelegate, UITabl
             sceneTimes = Array(movie.person.values)[indexPath.row] as [NSTimeInterval]
         }
         if !sceneTimes.isEmpty {
+            sceneTimes = sceneTimes.sort { $0 < $1 }
             moviePlayer.currentPlaybackTime = sceneTimes[0]
         }
         tableView.deselectRowAtIndexPath(indexPath, animated: true)
@@ -191,6 +194,7 @@ class VSMoviePlayerViewController: UIViewController, UITableViewDelegate, UITabl
             recButton.setTitle("Rec", forState:.Normal)
         }
     }
+
     @IBAction func soundButtonTapped(sender: AnyObject) {
         if !moviePlayer.currentPlaybackTime.isNaN {
             let sound = VSSound(time: moviePlayer.currentPlaybackTime, item: "yahoo")
@@ -202,7 +206,31 @@ class VSMoviePlayerViewController: UIViewController, UITableViewDelegate, UITabl
             ]
 
             Alamofire.request(.POST, "http://27.120.86.25/visy/minisounds.json", parameters: params as! [String : AnyObject] ,encoding: .JSON)
+        }
+    }
 
+    @IBAction func nextSceneButtonTapped(sender: AnyObject) {
+        if (sceneTimes != nil && !sceneTimes.isEmpty) {
+            let timeBuffer: Double = 1
+            for sceneTime in sceneTimes {
+                if (sceneTime >= moviePlayer.currentPlaybackTime + timeBuffer) {
+                    moviePlayer.currentPlaybackTime = sceneTime
+                    return
+                }
+            }
+        }
+    }
+
+    @IBAction func prevSceneButtonTapped(sender: AnyObject) {
+        if (sceneTimes != nil && !sceneTimes.isEmpty) {
+            let descendingSeceneTimes = sceneTimes.sort { $1 < $0 }
+            let timeBuffer: Double = 1
+            for sceneTime in descendingSeceneTimes {
+                if (sceneTime <= moviePlayer.currentPlaybackTime - timeBuffer) {
+                    moviePlayer.currentPlaybackTime = sceneTime
+                    return
+                }
+            }
         }
     }
 
@@ -235,6 +263,7 @@ class VSMoviePlayerViewController: UIViewController, UITableViewDelegate, UITabl
             })
         }
     }
+
     func randomStringWithLength (len : Int) -> String {
         
         let letters : NSString = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
