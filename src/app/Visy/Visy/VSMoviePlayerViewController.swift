@@ -32,16 +32,15 @@ class VSMoviePlayerViewController: UIViewController, UITableViewDelegate, UITabl
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        sceneTableView.delegate = self
-        sceneTableView.dataSource = self
-
         movie = VSMovie(youtubeId: youtubeId)
 
         setupSounds()
 
         setupMoviePlayer()
-        moviePlayer.play()
 
+        setupSceneTableView()
+
+        moviePlayer.play()
         statusTimer = NSTimer.scheduledTimerWithTimeInterval(0.5, target: self, selector:"playWithTime", userInfo: nil, repeats: true)
     }
 
@@ -58,26 +57,57 @@ class VSMoviePlayerViewController: UIViewController, UITableViewDelegate, UITabl
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         return 2
     }
-    
+
+    func tableView(tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        let sectionLabel = UILabel(frame: CGRectMake(0, 0, self.view.frame.width, 60))
+        sectionLabel.font = UIFont.systemFontOfSize(14)
+        sectionLabel.backgroundColor = UIColor(white: 0.98, alpha: 1.0)
+        if section == 0 {
+            sectionLabel.text = "感情"
+        } else {
+            sectionLabel.text = "プレイヤー"
+        }
+        return sectionLabel
+    }
+
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if section == 0 {
-            return movie.scene.count
+            return movie.emotion.count
         } else {
             return movie.person.count
         }
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath:NSIndexPath) -> UITableViewCell {
-        let cell: UITableViewCell = UITableViewCell(style: UITableViewCellStyle.Subtitle, reuseIdentifier: "sceneCell")
-        cell.textLabel?.text = "シーン" + String(indexPath.row + 1)
+        let cell: VSSceneListCell = tableView.dequeueReusableCellWithIdentifier("sceneListCell", forIndexPath: indexPath) as! VSSceneListCell
+
+        if indexPath.section == 0 {
+            let emotionTitle = Array(movie.emotion.keys)[indexPath.row]
+            cell.sceneLabel.text = emotionTitle
+            cell.sceneImageView.image = UIImage(named: emotionTitle)
+        } else if indexPath.section == 1 {
+            let personTitle = Array(movie.person.keys)[indexPath.row]
+            cell.sceneLabel.text = personTitle
+            cell.sceneImageView.image = UIImage(named: personTitle)
+        }
+
         return cell
+    }
+
+    func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+        return VSSceneListCell.cellHeight()
     }
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath:NSIndexPath) {
-        tableView.deselectRowAtIndexPath(indexPath, animated: true)
-        let times: [NSTimeInterval] = [1530, 3217, 3877, 3275, 3800, 4425, 4545, 4965, 5805, 5810, 5815, 6215]
-        let time: NSTimeInterval = times[indexPath.row]
-        moviePlayer.currentPlaybackTime = time
+        if indexPath.section == 0 {
+            print("hoge")
+        } else {
+            print("fuga")
+        }
+//        tableView.deselectRowAtIndexPath(indexPath, animated: true)
+//        let times: [NSTimeInterval] = [1530, 3217, 3877, 3275, 3800, 4425, 4545, 4965, 5805, 5810, 5815, 6215]
+//        let time: NSTimeInterval = times[indexPath.row]
+//        moviePlayer.currentPlaybackTime = time
     }
 
     func setupSounds() {
@@ -102,6 +132,14 @@ class VSMoviePlayerViewController: UIViewController, UITableViewDelegate, UITabl
         moviePlayer = MPMoviePlayerController(contentURL: videoUrl)
         moviePlayer.view.frame = CGRect(x: 0, y: 40, width: 375, height: 250)
         moviePlayerView.addSubview(moviePlayer.view)
+    }
+
+    func setupSceneTableView() {
+        let nib: UINib = UINib(nibName: "VSSceneListCell", bundle: nil)
+        sceneTableView.registerNib(nib, forCellReuseIdentifier: "sceneListCell")
+
+        sceneTableView.delegate = self
+        sceneTableView.dataSource = self
     }
     
     func playWithTime() {
@@ -128,10 +166,12 @@ class VSMoviePlayerViewController: UIViewController, UITableViewDelegate, UITabl
     }
 
     func playSound(sound: VSSound) {
-        let filename: String = "Resource/" + sound.item
-        let audioPath = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource(filename, ofType: "m4a")!)
-        audioPlayer = try! AVAudioPlayer(contentsOfURL: audioPath)
-        audioPlayer.play()
+        if !sound.item.isEmpty {
+            let filename: String = "Resource/" + sound.item
+            let audioPath = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource(filename, ofType: "m4a")!)
+            audioPlayer = try! AVAudioPlayer(contentsOfURL: audioPath)
+            audioPlayer.play()
+        }
     }
 
     @IBAction func soundButtonTapped(sender: AnyObject) {

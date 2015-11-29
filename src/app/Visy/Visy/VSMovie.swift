@@ -9,10 +9,11 @@
 import UIKit
 
 class VSMovie: NSObject {
+
     var youtubeId: String
     var title: String
     var thumbnail: UIImage
-    var scene: Dictionary<String, [NSTimeInterval]>
+    var emotion: Dictionary<String, [NSTimeInterval]>
     var person: Dictionary<String, [NSTimeInterval]>
 
     init(youtubeId: String) {
@@ -26,12 +27,16 @@ class VSMovie: NSObject {
         // TODO: youtubeIdをサーバーに渡して個別のtitle, scene, personを取得するように実装
         self.title = "ラグビー日本vs南アフリカ"
 
-        self.scene = [
-            "excite": [21, 30, 30]
+        self.emotion = [
+            "exciting": [21, 30, 40],
+            "laughing": [210, 300, 320],
         ]
 
         self.person = [
-            "goroumaru": [2, 300, 480]
+            "goroumaru": [2, 300, 480],
+            "yamada": [44, 55, 66],
+            "tanaka": [4, 15, 26]
         ]
     }
+
 }

@@ -10,6 +10,7 @@ import Foundation
 import SwiftyJSON
 
 class VSSound {
+
     var time: Double
     var item: String
 
@@ -17,4 +18,5 @@ class VSSound {
         self.time = time
         self.item = item
     }
+
 }
