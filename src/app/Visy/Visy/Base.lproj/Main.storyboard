@@ -47,7 +47,9 @@
                             <constraint firstItem="r3T-7o-hAL" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="ej7-MA-SZ2"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="Mdo-Eh-c1x"/>
+                    <navigationItem key="navigationItem" id="Mdo-Eh-c1x">
+                        <barButtonItem key="backBarButtonItem" title=" " id="3GQ-2r-dLh"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="movieListTableView" destination="r3T-7o-hAL" id="8CD-vW-j9y"/>
                     </connections>
@@ -77,17 +79,30 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kaQ-V4-mHI">
                                 <rect key="frame" x="0.0" y="285" width="600" height="60"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gkq-gD-vlB">
-                                        <rect key="frame" x="270" y="15" width="60" height="30"/>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gkq-gD-vlB">
+                                        <rect key="frame" x="393" y="15" width="60" height="30"/>
                                         <color key="backgroundColor" red="0.98039215690000003" green="0.98039215690000003" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="4Bj-HX-ERC"/>
-                                            <constraint firstAttribute="width" constant="60" id="uzv-Mp-ayi"/>
+                                            <constraint firstAttribute="width" constant="40" id="uzv-Mp-ayi"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                        <state key="normal" title="♪"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                        <state key="normal" title="Stamp"/>
                                         <connections>
                                             <action selector="soundButtonTapped:" destination="7J3-8D-Hbn" eventType="touchUpInside" id="ZwZ-5n-Hq9"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U9B-9Z-CFv">
+                                        <rect key="frame" x="162" y="15" width="60" height="30"/>
+                                        <color key="backgroundColor" red="0.98039215690000003" green="0.98039215690000003" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="40" id="eH4-JE-IgZ"/>
+                                            <constraint firstAttribute="height" constant="30" id="jFz-uS-yyK"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <state key="normal" title="Rec"/>
+                                        <connections>
+                                            <action selector="soundButtonTapped:" destination="7J3-8D-Hbn" eventType="touchUpInside" id="0Fb-HI-kXx"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lp0-pN-YaG">
@@ -108,13 +123,30 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                         <state key="normal" title="&gt;"/>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vyt-ye-ejR">
+                                        <rect key="frame" x="270" y="15" width="60" height="30"/>
+                                        <color key="backgroundColor" red="0.98039215690000003" green="0.98039215690000003" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="40" id="TB5-nL-yRH"/>
+                                            <constraint firstAttribute="height" constant="30" id="YrO-NJ-Pdt"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <state key="normal" title="Send"/>
+                                        <connections>
+                                            <action selector="soundButtonTapped:" destination="7J3-8D-Hbn" eventType="touchUpInside" id="guM-0k-d18"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="Lp0-pN-YaG" firstAttribute="leading" secondItem="kaQ-V4-mHI" secondAttribute="leading" constant="15" id="5FR-7K-UBc"/>
                                     <constraint firstItem="Gkq-gD-vlB" firstAttribute="centerY" secondItem="kaQ-V4-mHI" secondAttribute="centerY" id="8pP-m3-Ubh"/>
-                                    <constraint firstItem="Gkq-gD-vlB" firstAttribute="centerX" secondItem="kaQ-V4-mHI" secondAttribute="centerX" id="CaF-WX-cQL"/>
+                                    <constraint firstItem="vyt-ye-ejR" firstAttribute="centerX" secondItem="kaQ-V4-mHI" secondAttribute="centerX" id="JTJ-bC-Cht"/>
+                                    <constraint firstItem="U9B-9Z-CFv" firstAttribute="centerY" secondItem="kaQ-V4-mHI" secondAttribute="centerY" id="Kgx-dW-QyR"/>
                                     <constraint firstAttribute="trailing" secondItem="KQs-bU-KrY" secondAttribute="trailing" constant="15" id="QN0-4O-D6c"/>
+                                    <constraint firstItem="U9B-9Z-CFv" firstAttribute="leading" secondItem="Lp0-pN-YaG" secondAttribute="trailing" constant="40" id="Xvk-KF-EYn"/>
                                     <constraint firstItem="Lp0-pN-YaG" firstAttribute="centerY" secondItem="kaQ-V4-mHI" secondAttribute="centerY" id="auE-Bf-Vhd"/>
+                                    <constraint firstItem="vyt-ye-ejR" firstAttribute="centerY" secondItem="kaQ-V4-mHI" secondAttribute="centerY" id="cKz-58-xn0"/>
+                                    <constraint firstItem="KQs-bU-KrY" firstAttribute="leading" secondItem="Gkq-gD-vlB" secondAttribute="trailing" constant="40" id="cV5-sP-LTm"/>
                                     <constraint firstItem="KQs-bU-KrY" firstAttribute="centerY" secondItem="kaQ-V4-mHI" secondAttribute="centerY" id="gT7-28-z4c"/>
                                     <constraint firstAttribute="height" constant="60" id="orF-ma-42l"/>
                                 </constraints>
