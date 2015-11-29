@@ -28,14 +28,15 @@ class VSMovie: NSObject {
         self.title = "ラグビー日本vs南アフリカ"
 
         self.emotion = [
-            "exciting": [],
-            "laughing": [210, 300, 320],
+            "exciting": [], // ダミー
+            "laughing": [210, 300, 320], // ダミー
         ]
 
         self.person = [
-            "goroumaru": [1530, 3217, 4425, 4545, 4965, 5805, 5810, 5815, 6215],
-            "yamada": [44, 55, 66],
-            "tanaka": [4, 15, 26]
+            // "goroumaru"の出現時間に関するデータは"src/python/extract_goromaru_deeplearning_face.py"の出力結果を用いています。
+            "goroumaru": [386, 641, 866, 3041, 3551, 3891, 4421, 4831],
+            "yamada": [44, 55, 66], // ダミー
+            "tanaka": [4, 15, 26] //ダミー
         ]
     }
 

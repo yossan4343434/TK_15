@@ -45,15 +45,22 @@ class VSMoviePlayerViewController: UIViewController, UITableViewDelegate, UITabl
 
         movie = VSMovie(youtubeId: youtubeId)
 
-        setupMiniSounds()
-        setupSounds()
-        
         setupMoviePlayer()
         setupMiniSounds()
 
         setupSceneTableView()
 
-        moviePlayer.play()
+        setupMiniSounds({() in
+            self.sounds = self.sounds.sort({ $0.time < $1.time })
+            print(self.sounds)
+            moviePlayer.play()
+        }())
+        setupSounds({() in
+            self.sounds = self.sounds.sort({ $0.time < $1.time })
+            print(self.sounds)
+            moviePlayer.play()
+        }())
+
         statusTimer = NSTimer.scheduledTimerWithTimeInterval(0.5, target: self, selector:"playWithTime", userInfo: nil, repeats: true)
         sendButton.hidden = true
     }
@@ -197,8 +204,6 @@ class VSMoviePlayerViewController: UIViewController, UITableViewDelegate, UITabl
     }
 
     func playSound(sound: VSSound) {
-        self.sounds = self.sounds.sort({ $0.time < $1.time })
-        print(self.sounds)
         if !sound.item.isEmpty {
             if sound.type == "minisound" {
                 let filename: String = "Resource/" + sound.item
@@ -215,7 +220,6 @@ class VSMoviePlayerViewController: UIViewController, UITableViewDelegate, UITabl
     }
 
     @IBAction func recButtonTapped(sender: AnyObject) {
-        print(sounds)
         if !moviePlayer.currentPlaybackTime.isNaN {
             if recButton.titleLabel?.text == "Rec"{
                 recButton.setTitle("Stop", forState:.Normal)
