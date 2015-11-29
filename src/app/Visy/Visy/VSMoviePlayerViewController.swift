@@ -20,6 +20,8 @@ class VSMoviePlayerViewController: UIViewController, UITableViewDelegate, UITabl
     @IBOutlet weak var controlBarView: UIView!
     @IBOutlet weak var sceneTableView: UITableView!
     @IBOutlet weak var soundButton: UIButton!
+    @IBOutlet weak var nextSceneButton: UIButton!
+    @IBOutlet weak var prevSceneButton: UIButton!
 
     var youtubeId = String()
     var moviePlayer: MPMoviePlayerController!
@@ -106,6 +108,7 @@ class VSMoviePlayerViewController: UIViewController, UITableViewDelegate, UITabl
             sceneTimes = Array(movie.person.values)[indexPath.row] as [NSTimeInterval]
         }
         if !sceneTimes.isEmpty {
+            sceneTimes = sceneTimes.sort { $0 < $1 }
             moviePlayer.currentPlaybackTime = sceneTimes[0]
         }
         tableView.deselectRowAtIndexPath(indexPath, animated: true)
@@ -186,8 +189,29 @@ class VSMoviePlayerViewController: UIViewController, UITableViewDelegate, UITabl
             ]
 
             Alamofire.request(.POST, "http://27.120.86.25/visy/minisounds.json", parameters: params as! [String : AnyObject] ,encoding: .JSON)
-
         }
     }
 
+    @IBAction func nextSceneButtonTapped(sender: AnyObject) {
+        if (sceneTimes != nil && !sceneTimes.isEmpty) {
+            for sceneTime in sceneTimes {
+                if (sceneTime >= moviePlayer.currentPlaybackTime) {
+                    moviePlayer.currentPlaybackTime = sceneTime
+                    return
+                }
+            }
+        }
+    }
+
+    @IBAction func prevSceneButtonTapped(sender: AnyObject) {
+        if (sceneTimes != nil && !sceneTimes.isEmpty) {
+            let descendingSeceneTimes = sceneTimes.sort { $1 < $0 }
+            for sceneTime in descendingSeceneTimes {
+                if (sceneTime <= moviePlayer.currentPlaybackTime - 2) {
+                    moviePlayer.currentPlaybackTime = sceneTime
+                    return
+                }
+            }
+        }
+    }
 }
