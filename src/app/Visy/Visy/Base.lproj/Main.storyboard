@@ -148,6 +148,9 @@
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                         <state key="normal" title="Send"/>
+                                        <connections>
+                                            <action selector="sendButtonTapped:" destination="7J3-8D-Hbn" eventType="touchUpInside" id="J33-He-n26"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <animations/>
@@ -222,6 +225,7 @@
                         <outlet property="prevSceneButton" destination="Lp0-pN-YaG" id="kqr-gz-RhO"/>
                         <outlet property="recButton" destination="U9B-9Z-CFv" id="PEa-z0-uwr"/>
                         <outlet property="sceneTableView" destination="7aV-Ys-Rfk" id="Trb-2h-v0E"/>
+                        <outlet property="sendButton" destination="vyt-ye-ejR" id="2pe-zq-eOR"/>
                         <outlet property="soundButton" destination="Gkq-gD-vlB" id="pS2-Zz-mRW"/>
                     </connections>
                 </viewController>
