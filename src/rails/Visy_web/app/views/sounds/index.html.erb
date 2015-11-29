@@ -21,7 +21,7 @@
         <td><%= sound.name %></td>
         <td><%= sound.video_id %></td>
         <td><%= sound.playtime %></td>
-        <td><%= sound.sound %></td>
+        <td><%= link_to "down", "/visy/sounds/#{sound.id}/download" %></td>
         <td><%=l sound.created_at %></td>
         <td>
           <%= link_to t('.edit', :default => t("helpers.links.edit")),
@@ -41,6 +41,6 @@
             new_sound_path,
             :class => 'btn btn-primary' %>
 <button type="button" class="btn btn-default">
-<%= link_to "reset", "/sounds_reset"%>
+<%= link_to "reset", "visy/sounds_reset"%>
 </button>
 
