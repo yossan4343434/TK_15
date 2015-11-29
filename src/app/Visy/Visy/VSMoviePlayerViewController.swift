@@ -151,7 +151,6 @@ class VSMoviePlayerViewController: UIViewController, UITableViewDelegate, UITabl
                 self.sounds.append(VSSound.init(time:playTime, item:name, type:"sound"))
                 self.downloadSound(soundId,fileName: name)
             }
-            
         }
     }
 
@@ -198,6 +197,8 @@ class VSMoviePlayerViewController: UIViewController, UITableViewDelegate, UITabl
     }
 
     func playSound(sound: VSSound) {
+        self.sounds = self.sounds.sort({ $0.time < $1.time })
+        print(self.sounds)
         if !sound.item.isEmpty {
             if sound.type == "minisound" {
                 let filename: String = "Resource/" + sound.item
@@ -207,10 +208,8 @@ class VSMoviePlayerViewController: UIViewController, UITableViewDelegate, UITabl
 
             } else if sound.type == "sound" {
                 let filename: NSURL = soundPath.URLByAppendingPathComponent(sound.item)
-//                let audioPath = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource(filename, ofType: "caf")!)
                 audioPlayer = try! AVAudioPlayer(contentsOfURL: filename)
                 audioPlayer.play()
-
             }
         }
     }
