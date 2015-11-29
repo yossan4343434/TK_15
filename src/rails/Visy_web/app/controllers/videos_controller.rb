@@ -23,12 +23,12 @@ class VideosController < ApplicationController
 
   def get_minisound
     video = Video.find_by(youtube_id: params[:youtube_id])
-    render json: video.minisounds
+    render json: video.minisounds.order("playtime")
   end
 
   def get_sound
     video = Video.find_by(youtube_id: params[:youtube_id])
-    render json:video.sounds
+    render json:video.sounds.order("playtime")
   end
 
   # POST /videos

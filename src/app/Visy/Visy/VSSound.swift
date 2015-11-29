@@ -13,10 +13,13 @@ class VSSound {
 
     var time: Double
     var item: String
+    var type: String
 
-    init(time: Double, item: String) {
+
+    init(time: Double, item: String, type:String) {
         self.time = time
         self.item = item
+        self.type = type
     }
 
 }

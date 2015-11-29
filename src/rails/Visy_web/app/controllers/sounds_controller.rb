@@ -4,12 +4,19 @@ class SoundsController < ApplicationController
   # GET /sounds
   # GET /sounds.json
   def index
-    @sounds = Sound.all
+    @sounds = Sound.all.order("playtime")
   end
 
   # GET /sounds/1
   # GET /sounds/1.json
   def show
+  end
+
+  def reset
+    Sound.all.each do |sound|
+      sound.destroy
+    end
+    redirect_to :root
   end
 
   # GET /sounds/new
@@ -22,7 +29,8 @@ class SoundsController < ApplicationController
   end
 
   def download
-    sound = Sound.find_by(params[:id])
+    sound = Sound.find_by(id:params[:id])
+    puts sound.name
     filename = sound.name
     filepath = Rails.root.join('public/sound',filename)
     stat = File::stat(filepath)
@@ -61,6 +69,7 @@ class SoundsController < ApplicationController
   # DELETE /sounds/1.json
   def destroy
     @sound.destroy
+    # File.delete("./sound/" + @sound.name)
     respond_to do |format|
       format.html { redirect_to sounds_url, notice: 'Sound was successfully destroyed.' }
       format.json { head :no_content }

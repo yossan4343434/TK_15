@@ -7,9 +7,11 @@ class MinisoundsController < ApplicationController
     @minisounds = Minisound.all.order("playtime")
   end
 
-  def clean
+  def reset
     Minisound.delete_all
+    redirect_to :root
   end
+
   # GET /minisounds/1
   # GET /minisounds/1.json
   def show
