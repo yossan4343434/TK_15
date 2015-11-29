@@ -108,6 +108,9 @@
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <state key="normal" title="Rec"/>
+                                        <connections>
+                                            <action selector="recButtonTapped:" destination="7J3-8D-Hbn" eventType="touchUpInside" id="FMK-2I-LIW"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lp0-pN-YaG">
                                         <rect key="frame" x="15" y="15" width="46" height="30"/>
@@ -145,9 +148,6 @@
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                         <state key="normal" title="Send"/>
-                                        <connections>
-                                            <action selector="soundButtonTapped:" destination="7J3-8D-Hbn" eventType="touchUpInside" id="guM-0k-d18"/>
-                                        </connections>
                                     </button>
                                 </subviews>
                                 <animations/>
@@ -220,6 +220,7 @@
                         <outlet property="moviePlayerView" destination="Lzd-JU-t68" id="Zjd-IU-lnM"/>
                         <outlet property="nextSceneButton" destination="KQs-bU-KrY" id="WX1-uC-21T"/>
                         <outlet property="prevSceneButton" destination="Lp0-pN-YaG" id="kqr-gz-RhO"/>
+                        <outlet property="recButton" destination="U9B-9Z-CFv" id="PEa-z0-uwr"/>
                         <outlet property="sceneTableView" destination="7aV-Ys-Rfk" id="Trb-2h-v0E"/>
                         <outlet property="soundButton" destination="Gkq-gD-vlB" id="pS2-Zz-mRW"/>
                     </connections>

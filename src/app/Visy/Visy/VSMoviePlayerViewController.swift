@@ -16,21 +16,26 @@ import SwiftyJSON
 
 class VSMoviePlayerViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
+
     @IBOutlet weak var moviePlayerView: UIView!
     @IBOutlet weak var controlBarView: UIView!
     @IBOutlet weak var sceneTableView: UITableView!
     @IBOutlet weak var soundButton: UIButton!
     @IBOutlet weak var nextSceneButton: UIButton!
     @IBOutlet weak var prevSceneButton: UIButton!
+    @IBOutlet weak var recButton: UIButton!
 
     var youtubeId = String()
     var moviePlayer: MPMoviePlayerController!
     var audioPlayer: AVAudioPlayer!
+    var audioRecorder: AVAudioRecorder!
     var statusTimer: NSTimer!
     var movie: VSMovie!
     var sounds: [VSSound] = []
     var nextSound: VSSound!
     var sceneTimes: [NSTimeInterval]!
+    var urlpath: NSURL!
+    var soundName: String!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -178,6 +183,18 @@ class VSMoviePlayerViewController: UIViewController, UITableViewDelegate, UITabl
         }
     }
 
+    @IBAction func recButtonTapped(sender: AnyObject) {
+        if recButton.titleLabel?.text == "Rec"{
+            recButton.setTitle("Stop", forState:.Normal)
+            soundRecord()
+        }
+        else {
+            audioRecorder.stop()
+            audioRecorder = nil
+            recButton.setTitle("Rec", forState:.Normal)
+        }
+    }
+
     @IBAction func soundButtonTapped(sender: AnyObject) {
         if !moviePlayer.currentPlaybackTime.isNaN {
             let sound = VSSound(time: moviePlayer.currentPlaybackTime, item: "yahoo")
@@ -194,8 +211,9 @@ class VSMoviePlayerViewController: UIViewController, UITableViewDelegate, UITabl
 
     @IBAction func nextSceneButtonTapped(sender: AnyObject) {
         if (sceneTimes != nil && !sceneTimes.isEmpty) {
+            let timeBuffer: Double = 1
             for sceneTime in sceneTimes {
-                if (sceneTime >= moviePlayer.currentPlaybackTime) {
+                if (sceneTime >= moviePlayer.currentPlaybackTime + timeBuffer) {
                     moviePlayer.currentPlaybackTime = sceneTime
                     return
                 }
@@ -206,12 +224,59 @@ class VSMoviePlayerViewController: UIViewController, UITableViewDelegate, UITabl
     @IBAction func prevSceneButtonTapped(sender: AnyObject) {
         if (sceneTimes != nil && !sceneTimes.isEmpty) {
             let descendingSeceneTimes = sceneTimes.sort { $1 < $0 }
+            let timeBuffer: Double = 1
             for sceneTime in descendingSeceneTimes {
-                if (sceneTime <= moviePlayer.currentPlaybackTime - 2) {
+                if (sceneTime <= moviePlayer.currentPlaybackTime - timeBuffer) {
                     moviePlayer.currentPlaybackTime = sceneTime
                     return
                 }
             }
         }
     }
+
+    func soundRecord() {
+        let audioSession:AVAudioSession = AVAudioSession.sharedInstance()
+        if (audioSession.respondsToSelector("requestRecordPermission:")) {
+            AVAudioSession.sharedInstance().requestRecordPermission({(granted: Bool)-> Void in
+                if granted {
+                    try! audioSession.setCategory(AVAudioSessionCategoryPlayAndRecord)
+                    try! audioSession.setActive(true)
+                    let urls = NSFileManager.defaultManager().URLsForDirectory(NSSearchPathDirectory.DocumentDirectory, inDomains: NSSearchPathDomainMask.UserDomainMask)
+                    let dirURL = urls[0]
+                    self.soundName = self.randomStringWithLength(6) + ".caf"
+                    self.urlpath = dirURL.URLByAppendingPathComponent(self.soundName)
+                    print(self.urlpath)
+                    let settings: [String : AnyObject] = [
+                        AVFormatIDKey:Int(kAudioFormatAppleIMA4),
+                        AVSampleRateKey:44100.0,
+                        AVNumberOfChannelsKey:2,
+                        AVEncoderBitRateKey:12800,
+                        AVLinearPCMBitDepthKey:16,
+                        AVEncoderAudioQualityKey:AVAudioQuality.Max.rawValue
+                    ]
+                    try! self.audioRecorder = AVAudioRecorder(URL: self.urlpath!, settings: settings)
+                    self.audioRecorder.record()
+                    
+                } else{
+                    print("not granted")
+                }
+            })
+        }
+    }
+
+    func randomStringWithLength (len : Int) -> String {
+        
+        let letters : NSString = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
+        
+        let randomString : NSMutableString = NSMutableString(capacity: len)
+        
+        for (var i=0; i < len; i++){
+            let length = UInt32 (letters.length)
+            let rand = arc4random_uniform(length)
+            randomString.appendFormat("%C", letters.characterAtIndex(Int(rand)))
+        }
+        
+        return randomString as String
+    }
+
 }
