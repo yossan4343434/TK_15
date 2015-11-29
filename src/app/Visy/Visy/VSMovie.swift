@@ -13,7 +13,7 @@ class VSMovie: NSObject {
     var youtubeId: String
     var title: String
     var thumbnail: UIImage
-    var scene: Dictionary<String, [NSTimeInterval]>
+    var emotion: Dictionary<String, [NSTimeInterval]>
     var person: Dictionary<String, [NSTimeInterval]>
 
     init(youtubeId: String) {
@@ -27,7 +27,7 @@ class VSMovie: NSObject {
         // TODO: youtubeIdをサーバーに渡して個別のtitle, scene, personを取得するように実装
         self.title = "ラグビー日本vs南アフリカ"
 
-        self.scene = [
+        self.emotion = [
             "exciting": [21, 30, 40],
             "laughing": [210, 300, 320],
         ]

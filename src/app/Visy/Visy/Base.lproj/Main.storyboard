@@ -17,16 +17,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="r3T-7o-hAL">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="r3T-7o-hAL">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <inset key="separatorInset" minX="12" minY="0.0" maxX="12" maxY="0.0"/>
+                                <color key="backgroundColor" red="0.98039215690000003" green="0.98039215690000003" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="movieListCell" id="EHT-aJ-fWG" customClass="VSMovieListCell" customModule="Visy" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="92" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="EHT-aJ-fWG" id="dnE-X9-1vQ">
-                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                         <connections>
@@ -80,7 +79,7 @@
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gkq-gD-vlB">
                                         <rect key="frame" x="270" y="15" width="60" height="30"/>
-                                        <color key="backgroundColor" white="0.95108243038779816" alpha="1" colorSpace="calibratedWhite"/>
+                                        <color key="backgroundColor" red="0.98039215690000003" green="0.98039215690000003" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="4Bj-HX-ERC"/>
                                             <constraint firstAttribute="width" constant="60" id="uzv-Mp-ayi"/>
@@ -124,14 +123,14 @@
                                 <rect key="frame" x="0.0" y="345" width="600" height="255"/>
                                 <subviews>
                                     <tableView clipsSubviews="YES" contentMode="scaleAspectFit" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="7aV-Ys-Rfk">
-                                        <rect key="frame" x="0.0" y="0.0" width="600" height="255"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <rect key="frame" x="16" y="0.0" width="568" height="255"/>
+                                        <color key="backgroundColor" red="0.98039215686274506" green="0.98039215686274506" blue="0.98039215686274506" alpha="1" colorSpace="calibratedRGB"/>
                                         <prototypes>
                                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="sceneListCell" rowHeight="44" id="Z21-HM-dqF" customClass="VSSceneListCell" customModule="Visy" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="92" width="600" height="44"/>
+                                                <rect key="frame" x="0.0" y="28" width="568" height="44"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Z21-HM-dqF" id="gNX-jQ-zSO">
-                                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="568" height="43"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                 </tableViewCellContentView>
                                             </tableViewCell>
@@ -142,11 +141,11 @@
                                         </connections>
                                     </tableView>
                                 </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="0.98039215690000003" green="0.98039215690000003" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="bottom" secondItem="7aV-Ys-Rfk" secondAttribute="bottom" id="5OI-Xf-h9s"/>
-                                    <constraint firstItem="7aV-Ys-Rfk" firstAttribute="leading" secondItem="TUW-Q1-KhB" secondAttribute="leading" id="X2j-lS-0EW"/>
-                                    <constraint firstAttribute="trailing" secondItem="7aV-Ys-Rfk" secondAttribute="trailing" id="gic-Iu-GNn"/>
+                                    <constraint firstItem="7aV-Ys-Rfk" firstAttribute="leading" secondItem="TUW-Q1-KhB" secondAttribute="leading" constant="16" id="X2j-lS-0EW"/>
+                                    <constraint firstAttribute="trailing" secondItem="7aV-Ys-Rfk" secondAttribute="trailing" constant="16" id="gic-Iu-GNn"/>
                                     <constraint firstItem="7aV-Ys-Rfk" firstAttribute="top" secondItem="TUW-Q1-KhB" secondAttribute="top" id="tYs-Gf-VXV"/>
                                 </constraints>
                             </view>

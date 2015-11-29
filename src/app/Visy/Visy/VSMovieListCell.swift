@@ -22,7 +22,7 @@ class VSMovieListCell: UITableViewCell {
     }
 
     class func cellHeight() -> CGFloat {
-        return 240
+        return 260
     }
     
 }
