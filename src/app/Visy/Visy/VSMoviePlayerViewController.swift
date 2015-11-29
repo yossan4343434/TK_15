@@ -37,14 +37,10 @@ class VSMoviePlayerViewController: UIViewController, UITableViewDelegate, UITabl
         setupSounds()
 
         setupMoviePlayer()
+
+        setupSceneTableView()
+
         moviePlayer.play()
-
-        let nib: UINib = UINib(nibName: "VSSceneListCell", bundle: nil)
-        sceneTableView.registerNib(nib, forCellReuseIdentifier: "sceneListCell")
-
-        sceneTableView.delegate = self
-        sceneTableView.dataSource = self
-
         statusTimer = NSTimer.scheduledTimerWithTimeInterval(0.5, target: self, selector:"playWithTime", userInfo: nil, repeats: true)
     }
 
@@ -62,17 +58,21 @@ class VSMoviePlayerViewController: UIViewController, UITableViewDelegate, UITabl
         return 2
     }
 
-    func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+    func tableView(tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        let sectionLabel = UILabel(frame: CGRectMake(0, 0, self.view.frame.width, 60))
+        sectionLabel.font = UIFont.systemFontOfSize(14)
+        sectionLabel.backgroundColor = UIColor(white: 0.98, alpha: 1.0)
         if section == 0 {
-            return "シーン"
+            sectionLabel.text = "感情"
         } else {
-            return "プレイヤー"
+            sectionLabel.text = "プレイヤー"
         }
+        return sectionLabel
     }
-    
+
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if section == 0 {
-            return movie.scene.count
+            return movie.emotion.count
         } else {
             return movie.person.count
         }
@@ -82,9 +82,9 @@ class VSMoviePlayerViewController: UIViewController, UITableViewDelegate, UITabl
         let cell: VSSceneListCell = tableView.dequeueReusableCellWithIdentifier("sceneListCell", forIndexPath: indexPath) as! VSSceneListCell
 
         if indexPath.section == 0 {
-            let sceneTitle = Array(movie.scene.keys)[indexPath.row]
-            cell.sceneLabel.text = sceneTitle
-            cell.sceneImageView.image = UIImage(named: sceneTitle)
+            let emotionTitle = Array(movie.emotion.keys)[indexPath.row]
+            cell.sceneLabel.text = emotionTitle
+            cell.sceneImageView.image = UIImage(named: emotionTitle)
         } else if indexPath.section == 1 {
             let personTitle = Array(movie.person.keys)[indexPath.row]
             cell.sceneLabel.text = personTitle
@@ -132,6 +132,14 @@ class VSMoviePlayerViewController: UIViewController, UITableViewDelegate, UITabl
         moviePlayer = MPMoviePlayerController(contentURL: videoUrl)
         moviePlayer.view.frame = CGRect(x: 0, y: 40, width: 375, height: 250)
         moviePlayerView.addSubview(moviePlayer.view)
+    }
+
+    func setupSceneTableView() {
+        let nib: UINib = UINib(nibName: "VSSceneListCell", bundle: nil)
+        sceneTableView.registerNib(nib, forCellReuseIdentifier: "sceneListCell")
+
+        sceneTableView.delegate = self
+        sceneTableView.dataSource = self
     }
     
     func playWithTime() {
