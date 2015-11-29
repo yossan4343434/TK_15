@@ -28,7 +28,7 @@ class VSMovie: NSObject {
         self.title = "ラグビー日本vs南アフリカ"
 
         self.emotion = [
-            "exciting": [21, 30, 40],
+            "exciting": [],
             "laughing": [210, 300, 320],
         ]
 
