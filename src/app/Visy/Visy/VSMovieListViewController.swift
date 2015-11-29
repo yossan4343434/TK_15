@@ -54,7 +54,7 @@ class VSMovieListViewController: UIViewController, UITableViewDelegate, UITableV
     }
 
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        if segue.identifier == "toMoviePlayer" {
+        if (segue.identifier == "toMoviePlayer") {
             var moviePlayerViewController = VSMoviePlayerViewController()
             moviePlayerViewController = segue.destinationViewController as! VSMoviePlayerViewController
             moviePlayerViewController.youtubeId = selectedId
