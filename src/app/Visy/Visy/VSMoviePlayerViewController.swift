@@ -28,6 +28,7 @@ class VSMoviePlayerViewController: UIViewController, UITableViewDelegate, UITabl
     var movie: VSMovie!
     var sounds: [VSSound] = []
     var nextSound: VSSound!
+    var sceneTimes: [NSTimeInterval]!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -62,7 +63,7 @@ class VSMoviePlayerViewController: UIViewController, UITableViewDelegate, UITabl
         let sectionLabel = UILabel(frame: CGRectMake(0, 0, self.view.frame.width, 60))
         sectionLabel.font = UIFont.systemFontOfSize(14)
         sectionLabel.backgroundColor = UIColor(white: 0.98, alpha: 1.0)
-        if section == 0 {
+        if (section == 0) {
             sectionLabel.text = "感情"
         } else {
             sectionLabel.text = "プレイヤー"
@@ -71,7 +72,7 @@ class VSMoviePlayerViewController: UIViewController, UITableViewDelegate, UITabl
     }
 
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        if section == 0 {
+        if (section == 0) {
             return movie.emotion.count
         } else {
             return movie.person.count
@@ -81,11 +82,11 @@ class VSMoviePlayerViewController: UIViewController, UITableViewDelegate, UITabl
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath:NSIndexPath) -> UITableViewCell {
         let cell: VSSceneListCell = tableView.dequeueReusableCellWithIdentifier("sceneListCell", forIndexPath: indexPath) as! VSSceneListCell
 
-        if indexPath.section == 0 {
+        if (indexPath.section == 0) {
             let emotionTitle = Array(movie.emotion.keys)[indexPath.row]
             cell.sceneLabel.text = emotionTitle
             cell.sceneImageView.image = UIImage(named: emotionTitle)
-        } else if indexPath.section == 1 {
+        } else {
             let personTitle = Array(movie.person.keys)[indexPath.row]
             cell.sceneLabel.text = personTitle
             cell.sceneImageView.image = UIImage(named: personTitle)
@@ -97,17 +98,17 @@ class VSMoviePlayerViewController: UIViewController, UITableViewDelegate, UITabl
     func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
         return VSSceneListCell.cellHeight()
     }
-    
+
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath:NSIndexPath) {
-        if indexPath.section == 0 {
-            print("hoge")
+        if (indexPath.section == 0) {
+            sceneTimes = Array(movie.emotion.values)[indexPath.row] as [NSTimeInterval]
         } else {
-            print("fuga")
+            sceneTimes = Array(movie.person.values)[indexPath.row] as [NSTimeInterval]
         }
-//        tableView.deselectRowAtIndexPath(indexPath, animated: true)
-//        let times: [NSTimeInterval] = [1530, 3217, 3877, 3275, 3800, 4425, 4545, 4965, 5805, 5810, 5815, 6215]
-//        let time: NSTimeInterval = times[indexPath.row]
-//        moviePlayer.currentPlaybackTime = time
+        if !sceneTimes.isEmpty {
+            moviePlayer.currentPlaybackTime = sceneTimes[0]
+        }
+        tableView.deselectRowAtIndexPath(indexPath, animated: true)
     }
 
     func setupSounds() {
@@ -146,9 +147,9 @@ class VSMoviePlayerViewController: UIViewController, UITableViewDelegate, UITabl
         let currentTime = moviePlayer.currentPlaybackTime
         print(currentTime)
         let oldTime = currentTime - 0.5
-        if !currentTime.isNaN && !sounds.isEmpty {
+        if (!currentTime.isNaN && !sounds.isEmpty) {
             getNextSound(currentTime)
-            if currentTime > nextSound.time - 0.5 && oldTime < nextSound.time {
+            if (currentTime > nextSound.time - 0.5 && oldTime < nextSound.time) {
                 playSound(nextSound)
             }
         }
@@ -157,7 +158,7 @@ class VSMoviePlayerViewController: UIViewController, UITableViewDelegate, UITabl
     func getNextSound(time: NSTimeInterval) {
         for sound in sounds {
             nextSound = sound
-            if time < sound.time {
+            if (time < sound.time) {
                 break
             } else {
                 continue
