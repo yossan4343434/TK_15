@@ -4,7 +4,7 @@ class SoundsController < ApplicationController
   # GET /sounds
   # GET /sounds.json
   def index
-    @sounds = Sound.all
+    @sounds = Sound.all.order("playtime")
   end
 
   # GET /sounds/1
